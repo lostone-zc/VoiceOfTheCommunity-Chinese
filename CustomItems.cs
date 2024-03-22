@@ -811,7 +811,7 @@ public class CustomItems
             // ZH: 暴击伤害增加20%，\n
             // 暴击时有10%概率挂创伤。（冷却：0.5秒）
 
-            item.itemDescription = " 暴击伤害增加20%，\n"
+            item.itemDescription = "暴击伤害增加20%，\n"
                                  + "暴击时有10%概率挂创伤。";
 
             // EN: A javelin that always hits vital organs, and drains all the blood out of whichever one it hits
