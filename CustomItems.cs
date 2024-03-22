@@ -1781,16 +1781,16 @@ public class CustomItems
             item.itemName = "重型卡利恩头盔";
 
             // EN: Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 30%.\n
-            // For every Spoils inscription owned, increase Max HP by 15.
+            // For every Carleon item owned, increase Max HP by 15.
 
             // KR: <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 30% 증가합니다.\n
             // 보유하고 있는 '칼레온' 아이템 1개당 최대 체력이 15 증가합니다.
 
             // ZH: <color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加30%，\n
-            // 每持有一个战利品刻印增加15血上限。
+            // 每持有一个卡利恩系列道具增加15血上限。
 
             item.itemDescription = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加30%，\n"
-                                 + "每持有一个战利品刻印增加15血上限。";
+                                 + "每持有一个卡利恩系列道具增加15血上限。";
 
             // EN: Only the strongest of Carleon's front line soldiers can wear this.\nThat... isn't saying very much, but still.
             // KR: 가장 강한 칼레온의 최전선에 선 병사들만이 쓸 수 있는 투구.\n하지만 큰 의미는 없어보인다.
