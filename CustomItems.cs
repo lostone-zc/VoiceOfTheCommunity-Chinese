@@ -33,6 +33,8 @@ public class CustomItems
      * Add item list - done
      * Renamed Behavior file name for Tainted Red Scarf - done
      * Resprite Dream Catcher - done
+     * Change description of Beginner's Lance - done
+     * Omen: Last Dawn becomes obtainable in the Dev Menu mod - done
      */
 
     private static List<CustomItemReference> InitializeItems()
@@ -1237,7 +1239,7 @@ public class CustomItems
             item.itemName = "初学者长枪";
 
             // EN: Increases <color=#F25D1C>Physical Attack</color> by 20%.\n
-            // Damage dealt to enemies with a dash attack is amplifies by 30%.
+            // Damage dealt to enemies with a dash attack is amplified by 30%.
 
             // KR: <color=#F25D1C>물리공격력</color>이 20% 증가합니다.\n
             // 적에게 대쉬공격으로 입히는 데미지가 30% 증폭됩니다.
@@ -1543,7 +1545,7 @@ public class CustomItems
             // ZH: 黎明去，永夜至。
             item.itemLore = "黎明去，永夜至。";
 
-            item.prefabKeyword1 = Inscription.Key.None;
+            item.prefabKeyword1 = Inscription.Key.Omen;
             item.prefabKeyword2 = Inscription.Key.Duel;
 
             item.stats = new Stat.Values(
