@@ -20,6 +20,19 @@ public class CustomItems
     /**
      * TODO
      * 
+     * Remove phys atk from Flask of Botulism - done
+     * Put the CORRECT files for the Heavy-Duty Carleon Helmet - done
+     * Remove amp from Goddess's Chalice - done
+     * Mana Accelerator 15% -> 10% - done
+     * Accursed Sabre 20% -> 10% - done
+     * Frozen Spear 2% -> 10% - done
+     * Frozen Spear evolution 300 -> 250 - done
+     * Resprite Winged Spear line - done
+     * Winged Sword -> Solar-Winged Sword - done
+     * Winged Insignia -> Lunar-Winged Insignia - done
+     * Add item list - done
+     * Renamed Behavior file name for Tainted Red Scarf - done
+     * Resprite Dream Catcher - done
      */
 
     private static List<CustomItemReference> InitializeItems()
@@ -35,7 +48,7 @@ public class CustomItems
             // ZH: 堕落者之瓶
             item.itemName = "堕落者之瓶";
 
-            // EN: Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 5% per enemy killed (Stacks up to 200% and 1/2 of total charge is lost when hit).\n
+            // EN: Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 5% per enemy killed (stacks up to 200% and 1/2 of total charge is lost when hit).\n
             // Attacking an enemy within 1 second of taking from a hit restores half of the charge lost from the hit (Cooldown: 3 seconds).
 
             // KR: 처치한 적의 수에 비례하여 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 5% 증가합니다 (최대 200% 증가, 피격시 증가치의 절반이 사라집니다).\n
@@ -331,7 +344,7 @@ public class CustomItems
 
             // EN: Increases <color=#1787D8>Magic Attack</color> by 100%.\n
             // Normal attacks and skills have a 20% chance to inflict Burn.\n
-            // Amplifies Damage to Burning enemies by 25%.\n
+            // Amplifies damage dealt to Burning enemies by 25%.\n
             // Burn duration decreases by 10% for each Arson inscription in possession.
 
             // KR: <color=#1787D8>마법공격력</color>이 100% 증가합니다.\n
@@ -438,22 +451,18 @@ public class CustomItems
             item.itemName = "女神圣杯";
 
             // EN: Increases swap cooldown speed by 40%.\n
-            // Damage dealt to enemies through a swap skill is amplified by 35%.\n
             // Swapping increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 10% for 6 seconds (maximum 40%).\n
             // At maximum stacks, swap cooldown speed is increased by 25%.
 
             // KR: 교대 쿨다운 속도가 40% 증가?니다.\n
-            // 적에게 교대스킬로 입히는 데미지가 35% 증폭됩니다.\n
             // 교대 시 6초 동안 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 10% 증가합니다 (최대 60%).\n
             // 공격력 증가치가 최대일 시, 교대 쿨다운 속도가 25% 증가합니다.
 
             // ZH: 替换冷却速度增加40%，\n
-            // 替换技能伤害增幅35%，\n
             // 6秒内替换时增加10%<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>（最多40%），\n
             // 满层后增加25%替换冷却速度。
 
             item.itemDescription = "替换冷却速度增加40%，\n"
-                                 + "替换技能伤害增幅35%，\n"
                                  + "6秒内替换时增加10%<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>（最多40%），\n"
                                  + "满层后增加25%替换冷却速度。";
 
@@ -469,15 +478,6 @@ public class CustomItems
             [
                 new(Stat.Category.PercentPoint, Stat.Kind.SwapCooldownSpeed, 0.4),
             ]);
-
-            ModifyDamage amplifySwapDamage = new();
-
-            amplifySwapDamage._attackTypes = new();
-            amplifySwapDamage._attackTypes[Damage.MotionType.Swap] = true;
-
-            amplifySwapDamage._damageTypes = new([true, true, true, true, true]);
-
-            amplifySwapDamage._damagePercent = 1.35f;
 
             GoddesssChaliceAbility goddesssChaliceAbility = new()
             {
@@ -496,7 +496,6 @@ public class CustomItems
 
             item.abilities = [
                 goddesssChaliceAbility,
-                amplifySwapDamage,
             ];
 
             item.forbiddenDrops = new[] { "Custom-RustyChalice" };
@@ -516,17 +515,13 @@ public class CustomItems
             // ZH: 预兆：病毒样本
             item.itemName = "预兆：病毒样本";
 
-            // EN: The interval between poison damage ticks is further decreased.\n
-            // Increases <color=#F25D1C>Physical Attack</color> by 50%.
+            // EN: The interval between poison damage ticks is further decreased.
 
-            // KR: 중독 데미지가 발생하는 간격이 더욱 줄어듭니다.\n
-            // <color=#F25D1C>물리공격력</color>이 50% 증가합니다.
+            // KR: 중독 데미지가 발생하는 간격이 더욱 줄어듭니다.
 
-            // ZH: 进一步缩短中毒伤害的伤害间隔，\n
-            // <color=#F25D1C>物理攻击力</color>增加50%。
+            // ZH: 进一步缩短中毒伤害的伤害间隔。
 
-            item.itemDescription = "进一步缩短中毒伤害的伤害间隔，\n"
-                                 + "<color=#F25D1C>物理攻击力</color>增加50%。";
+            item.itemDescription = "进一步缩短中毒伤害的伤害间隔。"
 
             // EN: Only the mad and cruel would consider using this as a weapon.
             // KR: 정말 미치지 않고서야 이걸 무기로 쓰는 일은 없을 것이다.
@@ -539,7 +534,6 @@ public class CustomItems
             item.stats = new Stat.Values(
             [
                 new(Stat.Category.Constant, Stat.Kind.PoisonTickFrequency, 0.1),
-                new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 0.5),
             ]);
 
             items.Add(item);
@@ -751,7 +745,7 @@ public class CustomItems
 
             // EN: Increases <color=#1787D8>Magic Attack</color> by 50%.\n
             // <color=#1787D8>Magic damage</color> dealt to enemies under 40% HP is amplified by 25%.\n
-            // <color=#1787D8>Magic Attack</color> increases by 8% each time a Omen or a Legendary item is destroyed.
+            // <color=#1787D8>Magic Attack</color> increases by 8% each time an Omen or a Legendary item is destroyed.
 
             // KR: <color=#1787D8>마법공격력</color>이 50% 증가합니다.\n
             // 현재 체력이 40% 이하인 적에게 입히는 <color=#1787D8>마법데미지</color>가 25% 증폭됩니다.\n
@@ -843,21 +837,21 @@ public class CustomItems
             // ZH: 冻魂
             item.itemName = "冻魂";
 
-            // EN: Skills have a 2% chance to inflict Freeze.\n
+            // EN: Skills have a 10% chance to inflict Freeze.\n
             // Increases <color=#1787D8>Magic Attack</color> by 20%.\n
-            // After applying freeze 300 times, this item turns into 'Spear of the Frozen Moon'.
+            // After applying freeze 250 times, this item turns into 'Spear of the Frozen Moon'.
 
-            // KR: 적에게 스킬로 공격시 2% 확률로 빙결을 부여합니다.\n
+            // KR: 적에게 스킬로 공격시 10% 확률로 빙결을 부여합니다.\n
             // <color=#1787D8>마법공격력</color>가 20% 증가합니다.\n
-            // 적에게 빙결을 300번 부여할 시 해당 아이템은 '얼어붙은 달의 창'으로 변합니다.
+            // 적에게 빙결을 250번 부여할 시 해당 아이템은 '얼어붙은 달의 창'으로 변합니다.
 
-            // ZH: 使用技能时有2%概率造成冰冻，\n
+            // ZH: 使用技能时有10%概率造成冰冻，\n
             // <color=#1787D8>魔法攻击力</color>增加20%，\n
-            // 造成300次冰冻后物品进化。
+            // 造成250次冰冻后物品进化。
 
-            item.itemDescription = "使用技能时有2%概率造成冰冻，\n"
+            item.itemDescription = "使用技能时有10%概率造成冰冻，\n"
                                  + "<color=#1787D8>魔法攻击力</color>增加20%，\n"
-                                 + "造成300次冰冻后物品进化。";
+                                 + "造成250次冰冻后物品进化。";
 
             // EN: A sealed weapon waiting the cold time to revealed it's true form.
             // KR: 해방의 혹한을 기다리는 봉인된 무기
@@ -875,7 +869,7 @@ public class CustomItems
             var applyStatus = new ApplyStatusOnGaveDamage();
             var status = Kind.Freeze;
             applyStatus._cooldownTime = 0.1f;
-            applyStatus._chance = 2;
+            applyStatus._chance = 10;
             applyStatus._attackTypes = new();
             applyStatus._attackTypes[MotionType.Skill] = true;
 
@@ -1202,13 +1196,13 @@ public class CustomItems
             // ZH: 魔力加速器
             item.itemName = "魔力加速器";
 
-            // EN: Skill casting speed increases by 15% for each Mana Cycle inscription in possession.
+            // EN: Skill casting speed increases by 10% for each Mana Cycle inscription in possession.
 
-            // KR: 보유중인 마나순환 각인 1개당 스킬 시전 속도가 15% 증가합니다.
+            // KR: 보유중인 마나순환 각인 1개당 스킬 시전 속도가 10% 증가합니다.
 
-            // ZH: 每个魔力循环刻印增加15%技能释放速度。
+            // ZH: 每个魔力循环刻印增加10%技能释放速度。
 
-            item.itemDescription = "每个魔力循环刻印增加15%技能释放速度。";
+            item.itemDescription = "每个魔力循环刻印增加10%技能释放速度。";
 
             // EN: In a last ditch effort, mages may turn to this device to overcharge their mana. Though the high stress on the mage's mana can often strip them of all magic.
             // KR: 마나를 극한까지 과부하시키는 마법사들의 최후의 수단.\n너무 강한 과부하는 사용자를 불구로 만들 수 있으니 조심해야 한다
@@ -1222,7 +1216,7 @@ public class CustomItems
             {
                 _statPerStack = new Stat.Values(
                 [
-                    new(Stat.Category.PercentPoint, Stat.Kind.SkillAttackSpeed, 0.15),
+                    new(Stat.Category.PercentPoint, Stat.Kind.SkillAttackSpeed, 0.1),
                 ])
             };
 
@@ -1346,8 +1340,8 @@ public class CustomItems
 
             item.obtainable = false;
 
-            // EN: Winged Sword
-            // KR: 날개달린 검
+            // EN: Solar-Winged Sword
+            // KR: 햇빛 날개달린 검
             // ZH: 黎明长剑
             item.itemName = "黎明长剑";
 
@@ -1399,8 +1393,8 @@ public class CustomItems
 
             item.obtainable = false;
 
-            // EN: Winged Insignia
-            // KR: 날개달린 휘장
+            // EN: Lunar-Winged Insignia
+            // KR: 달빛 날개달린 휘장
             // ZH: 黎明徽章
             item.itemName = "黎明徽章";
 
@@ -1674,7 +1668,7 @@ public class CustomItems
         {
             var item = new CustomItemReference();
             item.name = "WeirdHerbs";
-            item.rarity = Rarity.Common;
+            item.rarity = Rarity.Rare;
 
             // EN: Weird Herbs
             // KR: 수상한 허브
@@ -1721,7 +1715,7 @@ public class CustomItems
             item.gearTag = Gear.Tag.Omen;
             item.obtainable = false;
 
-            // EN: Accursed Sabre
+            // EN: Omen: Accursed Sabre
             // KR: 저주받은 단도
             // ZH: 预兆：诅咒佩刀
             item.itemName = "预兆：诅咒佩刀";
@@ -1830,7 +1824,7 @@ public class CustomItems
             // ZH: 诅咒沙漏
             item.itemName = "诅咒沙漏";
 
-            // EN: Upon entering a map or hitting a boss phase for the first time, amplfies damage dealt to enemies by 30% for 30 seconds.\n
+            // EN: Upon entering a map or hitting a boss phase for the first time, amplifies damage dealt to enemies by 30% for 30 seconds.\n
             // When the effect is not active, increases damage received by 30%.
 
             // KR: 맵 입장 혹은 보스(페이즈 포함) 에게 처음 데미지를 줄 시 30초 동안 적에게 입히는 데미지가 30% 증폭됩니다.\n
@@ -1943,7 +1937,7 @@ public class CustomItems
             ]);
 
             item.extraComponents = [
-                typeof(WitheringFabricEvolveBehavior),
+                typeof(TaintedRedScarfEvolveBehavior),
             ];
 
             items.Add(item);
