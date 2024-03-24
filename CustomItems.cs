@@ -20,23 +20,13 @@ public class CustomItems
     /**
      * TODO
      * 
-     * Remove phys atk from Flask of Botulism - done
-     * Put the CORRECT files for the Heavy-Duty Carleon Helmet - done
-     * Remove amp from Goddess's Chalice - done
-     * Mana Accelerator 15% -> 10% - done
-     * Accursed Sabre 20% -> 10% - done
-     * Frozen Spear 2% -> 10% - done
-     * Frozen Spear evolution 300 -> 250 - done
-     * Resprite Winged Spear line - done
-     * Winged Sword -> Solar-Winged Sword - done
-     * Winged Insignia -> Lunar-Winged Insignia - done
-     * Add item list - done
-     * Renamed Behavior file name for Tainted Red Scarf - done
-     * Resprite Dream Catcher - done
-     * Change description of Beginner's Lance - done
-     * Omen: Last Dawn becomes obtainable in the Dev Menu mod - done
-     * Volcanic Shard burn duration decrease 10% -> 5% - done
-     * Volcanic Shard magic atk 100% -> 80% - done
+     * Add magic atk boost to Tainted Finger line - done
+     * Change Volcanic Shard from amping burn to amping burning enemies - done
+     * Change name of Tainted Red Scarf in Thunderstore README - done
+     * Change description of Heavy-Duty Carleon Helmet - done
+     * Block Growing Potion spawning with Unstable Size Potion - done
+     * Fix Shrinking Potion not disappearing on evolution with full inventory - done (probably)
+     * Change description of Blood-Soaked Javelin - done
      */
 
     private static List<CustomItemReference> InitializeItems()
@@ -414,7 +404,7 @@ public class CustomItems
             // EN: Increases swap cooldown speed by 15%.\n
             // Upon hitting enemies with a swap skill 150 times, this item transforms into 'Goddess's Chalice.'
 
-            // KR: 교대 쿨다운 속도가 15% 증가?니다.\n
+            // KR: 교대 쿨다운 속도가 15% 증가합니다.\n
             // 적에게 교대스킬로 데미지를 150번 줄 시 해당 아이템은 '여신의 성배'로 변합니다.
 
             // ZH: 替换冷却速度增加15%，\n
@@ -458,8 +448,8 @@ public class CustomItems
             // Swapping increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 10% for 6 seconds (maximum 40%).\n
             // At maximum stacks, swap cooldown speed is increased by 25%.
 
-            // KR: 교대 쿨다운 속도가 40% 증가?니다.\n
-            // 교대 시 6초 동안 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 10% 증가합니다 (최대 60%).\n
+            // KR: 교대 쿨다운 속도가 40% 증가합니다.\n
+            // 교대 시 6초 동안 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 15% 증가합니다 (최대 60%).\n
             // 공격력 증가치가 최대일 시, 교대 쿨다운 속도가 25% 증가합니다.
 
             // ZH: 替换冷却速度增加40%，\n
@@ -616,6 +606,11 @@ public class CustomItems
             item.prefabKeyword1 = Inscription.Key.Artifact;
             item.prefabKeyword2 = Inscription.Key.Masterpiece;
 
+            item.stats = new Stat.Values(
+            [
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.6),
+            ]);
+
             ModifyDamage amplifySkillDamage = new();
 
             amplifySkillDamage._attackTypes = new();
@@ -666,6 +661,11 @@ public class CustomItems
 
             item.prefabKeyword1 = Inscription.Key.Artifact;
             item.prefabKeyword2 = Inscription.Key.Masterpiece;
+
+            item.stats = new Stat.Values(
+            [
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.6),
+            ]);
 
             ModifyDamage amplifySkillDamage = new();
 
@@ -719,6 +719,11 @@ public class CustomItems
 
             item.prefabKeyword1 = Inscription.Key.Artifact;
             item.prefabKeyword2 = Inscription.Key.Masterpiece;
+
+            item.stats = new Stat.Values(
+            [
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 1),
+            ]);
 
             ModifyDamage amplifySkillDamage = new();
 
@@ -801,16 +806,16 @@ public class CustomItems
             item.itemName = "染血标枪";
 
             // EN: Increases Crit Damage by 20%.\n
-            // Critical hits have a 10% chance to apply Wound (Cooldown: 0.5 seconds).
+            // Critical hits have a 5% chance to apply Wound (Cooldown: 0.5 seconds).
 
             // KR: 치명타 데미지가 20% 증가합니다.\n
-            // 치명타 시 10% 확률로 적에게 상처를 부여합니다 (쿨타임: 0.5초).
+            // 치명타 시 5% 확률로 적에게 상처를 부여합니다 (쿨타임: 0.5초).
 
             // ZH: 暴击伤害增加20%，\n
-            // 暴击时有10%概率挂创伤。（冷却：0.5秒）
+            // 暴击时有5%概率挂创伤。（冷却：0.5秒）
 
             item.itemDescription = "暴击伤害增加20%，\n"
-                                 + "暴击时有10%概率挂创伤。";
+                                 + "暴击时有5%概率挂创伤。（冷却：0.5秒）";
 
             // EN: A javelin that always hits vital organs, and drains all the blood out of whichever one it hits
             // KR: 적의 심장을 정확히 노려 시체에 피 한방울 남기지 않는 투창
@@ -1144,6 +1149,11 @@ public class CustomItems
             item.abilities = [
                 ability,
             ];
+
+            item.forbiddenDrops = new[] {
+                "Custom-ShrinkingPotion",
+                "Custom-GrowingPotion",
+            };
 
             items.Add(item);
         }
@@ -1779,7 +1789,7 @@ public class CustomItems
             item.itemName = "重型卡利恩头盔";
 
             // EN: Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 30%.\n
-            // For every Carleon item owned, increase Max HP by 15.
+            // For every 'Carleon' item owned, increase Max HP by 15.
 
             // KR: <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 30% 증가합니다.\n
             // 보유하고 있는 '칼레온' 아이템 1개당 최대 체력이 15 증가합니다.
