@@ -2,14 +2,16 @@
 This is a mod that adds new custom items to the game, all from the ideas of the Official Skul Discord!
 
 ## PLEASE BE AWARE!!!
+For those who wonder, using the English and Korean version together will not malfunction, one of them will get negated.
+
 This project is a variation of MrBacanudo's [Custom Items mod](https://github.com/MrBacanudo/SkulHardModeMods/tree/main/CustomItems).
 None of the code belongs to me excluding content related to custom items.
 
 ## Content
 This mod contains:
 
-* 5 Commons
-* 9 Rares
+* 4 Commons
+* 10 Rares
 * 4 Uniques
 * 3 Omens
 * 5 Legendaries

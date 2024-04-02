@@ -20,13 +20,21 @@ public class CustomItems
     /**
      * TODO
      * 
-     * Add magic atk boost to Tainted Finger line - done
-     * Change Volcanic Shard from amping burn to amping burning enemies - done
-     * Change name of Tainted Red Scarf in Thunderstore README - done
-     * Change description of Heavy-Duty Carleon Helmet - done
-     * Block Growing Potion spawning with Unstable Size Potion - done
-     * Fix Shrinking Potion not disappearing on evolution with full inventory - done (probably)
-     * Change description of Blood-Soaked Javelin - done
+     * Change sprites of Mana Accelerator - done
+     * Make Small Twig activate when picked up and skull is 'Lil Bone - done
+     * Change Small Twig to all atk +35%, skill cd and casting spd +30%, atk spd +15%, and amp 10% when as 'Lil Bone - done
+     * When evolved Rusted Chalice, project text saying "THE CHALICE GLEAMS WITH HOLY LIGHT" - done
+     * Translate the mod into Korean - done
+     * Change Cross Necklace's lore - done
+     * Change Vase of The Fallen's description - done
+     * Change Broken Heart's description - done
+     * Change Tainted Finger line stats (base gods finger amp skill dmg by 35% and increase magic atk by 60%, masterpiece 5 gods finger amp skill dmg 45% and increase magic atk by 70%, gods hand amp skill dmg by 70% and increase magic atk by 110%) - done
+     * Change lore of Blood-Soaked Javelin - done
+     * Change description of Winged Spear line - done
+     * Change lore of Spiky Rapida - done
+     * Rename Tattered Plushie to Tattered Cat Plushie - done
+     * Change lore of Tatered Cat Plushie - done
+     * Change sprites of Tainted Finger line - done
      */
 
     private static List<CustomItemReference> InitializeItems()
@@ -42,7 +50,7 @@ public class CustomItems
             item.itemName_ZH = "堕落者之瓶";
 
             item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 5% per enemy killed (stacks up to 200% and 1/2 of total charge is lost when hit).\n"
-                                    + "Attacking an enemy within 1 second of taking from a hit restores half of the charge lost from the hit (Cooldown: 3 seconds).";
+                                    + "Attacking an enemy within 1 second of taking from a hit restores half of the charge lost from the hit (cooldown: 3 seconds).";
 
             item.itemDescription_KR = "처치한 적의 수에 비례하여 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 5% 증가합니다 (최대 200% 증가, 피격시 증가치의 절반이 사라집니다).\n"
                                     + "피격 후 1초 내로 적 공격 시 감소한 증가치의 절반을 되돌려 받습니다 (쿨타임: 3초).";
@@ -144,11 +152,11 @@ public class CustomItems
 
             item.itemDescription_EN = "Amplifies <color=#1787D8>Magic Attack</color> by 20%.\n"
                                     + "Increases Quintessence cooldown speed by 60%.\n"
-                                    + "Amplifies Quintessence damage by 30%.\n";
+                                    + "Amplifies Quintessence damage by 30%.";
 
             item.itemDescription_KR = "<color=#1787D8>마법공격력</color>이 20% 증폭됩니다.\n"
                                     + "정수 쿨다운 속도가 60% 증가합니다.\n"
-                                    + "적에게 정수로 입히는 데미지가 30% 증폭됩니다.\n";
+                                    + "적에게 정수로 입히는 데미지가 30% 증폭됩니다.";
 
             item.itemDescription_ZH = "<color=#1787D8>魔法攻击力</color>增幅20%，\n"
                                     + "精华冷却速度增加60%，\n"
@@ -193,20 +201,20 @@ public class CustomItems
             item.itemName_KR = "작은 나뭇가지";
             item.itemName_ZH = "小树枝";
 
-            item.itemDescription_EN = "Amplifies <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 15%.\n"
+            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 35%.\n"
                                     + "Increases skill cooldown speed and skill casting speed by 30%.\n"
-                                    + "Increases Crit Rate and Crit Damage by 10%.\n"
-                                    + "All effects double and Amplifies damage dealt to enemies by 20% when \"Skul\" or \"Hero Little Bone\" is your current active skull.";
+                                    + "Increases Attack Speed by 15%.\n"
+                                    + "All effects double and Amplifies damage dealt to enemies by 10% when 'Skul' or 'Hero Little Bone' is your current active skull.";
 
-            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 15% 증폭됩니다.\n"
+            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 35% 증가합니다.\n"
                                     + "스킬 쿨다운 속도 및 스킬 시전 속도가 30% 증가합니다.\n"
-                                    + "치명타 확률 및 치명타 피해가 10% 증가합니다.\n"
-                                    + "\"스컬\" 혹은 \"용사 리틀본\" 스컬을 사용 중일 시 이 아이템의 모든 스탯 증가치가 두배가 되며 적에게 입히는 데미지가 20% 증폭됩니다.";
+                                    + "공격 속도가 15% 증가합니다.\n"
+                                    + "'스컬' 혹은 '용사 리틀본' 스컬을 사용 중일 시 이 아이템의 모든 스탯 증가치가 두배가 되며 적에게 입히는 데미지가 10% 증폭됩니다.";
 
-            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增幅15%，\n"
+            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加35%，\n"
                                     + "技能冷却速度增加30%，技能释放速度增加30%，\n"
-                                    + "暴击率增加10%，暴击伤害增加10%，\n"
-                                    + "如果你使用的是初始骨那么以上效果翻倍，造成伤害增幅20%。";
+                                    + "攻击速度增加15%，\n"
+                                    + "如果你使用的是初始骨那么以上效果翻倍，造成伤害增幅10%。";
 
             item.itemLore_EN = "A really cool looking twig, but for some reason I feel sad...";
             item.itemLore_KR = "정말 멋있어 보이는 나뭇가지일 터인데, 왜 볼 때 마다 슬퍼지는 걸까...";
@@ -217,12 +225,11 @@ public class CustomItems
 
             item.stats = new Stat.Values(
             [
-                new(Stat.Category.Percent, Stat.Kind.PhysicalAttackDamage, 1.15),
-                new(Stat.Category.Percent, Stat.Kind.MagicAttackDamage, 1.15),
+                new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 0.35),
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.35),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.3),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillAttackSpeed, 0.3),
-                new(Stat.Category.PercentPoint, Stat.Kind.CriticalChance, 0.1),
-                new(Stat.Category.PercentPoint, Stat.Kind.CriticalDamage, 0.1),
+                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.15),
             ]);
 
             item.extraComponents = [
@@ -242,20 +249,20 @@ public class CustomItems
             item.itemName_KR = "작은 나뭇가지";
             item.itemName_ZH = "小树枝";
 
-            item.itemDescription_EN = "Amplifies <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 15%.\n"
+            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 35%.\n"
                                     + "Increases skill cooldown speed and skill casting speed by 30%.\n"
-                                    + "Increases Crit Rate and Crit Damage by 10%.\n"
-                                    + "All effects double and amplifies damage dealt to enemies by 20% when 'Skul' or 'Hero Little Bone' is your current active skull.";
+                                    + "Increases Attack Speed by 15%.\n"
+                                    + "All effects double and Amplifies damage dealt to enemies by 10% when 'Skul' or 'Hero Little Bone' is your current active skull.";
 
-            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 15% 증폭됩니다.\n"
+            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 35% 증가합니다.\n"
                                     + "스킬 쿨다운 속도 및 스킬 시전 속도가 30% 증가합니다.\n"
-                                    + "치명타 확률 및 치명타 피해가 10% 증가합니다.\n"
-                                    + "'스컬' 혹은 '용사 리틀본' 스컬을 사용 중일 시 이 아이템의 모든 스탯 증가치가 두배가 되며 적에게 입히는 데미지가 20% 증폭됩니다.";
+                                    + "공격 속도가 15% 증가합니다.\n"
+                                    + "'스컬' 혹은 '용사 리틀본' 스컬을 사용 중일 시 이 아이템의 모든 스탯 증가치가 두배가 되며 적에게 입히는 데미지가 10% 증폭됩니다.";
 
-            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增幅15%，\n"
+            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加35%，\n"
                                     + "技能冷却速度增加30%，技能释放速度增加30%，\n"
-                                    + "暴击率增加10%，暴击伤害增加10%，\n"
-                                    + "如果你使用的是初始骨那么以上效果翻倍，造成伤害增幅20%。";
+                                    + "攻击速度增加15%，\n"
+                                    + "如果你使用的是初始骨那么以上效果翻倍，造成伤害增幅10%。";
 
             item.itemLore_EN = "A really cool looking twig, but for some reason I feel sad...";
             item.itemLore_KR = "정말 멋있어 보이는 나뭇가지일 터인데, 왜 볼 때 마다 슬퍼지는 걸까...";
@@ -266,12 +273,11 @@ public class CustomItems
 
             item.stats = new Stat.Values(
             [
-                new(Stat.Category.Percent, Stat.Kind.PhysicalAttackDamage, 1.3),
-                new(Stat.Category.Percent, Stat.Kind.MagicAttackDamage, 1.3),
+                new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 0.7),
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.7),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.6),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillAttackSpeed, 0.6),
-                new(Stat.Category.PercentPoint, Stat.Kind.CriticalChance, 0.2),
-                new(Stat.Category.PercentPoint, Stat.Kind.CriticalDamage, 0.2),
+                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.3),
             ]);
 
             ModifyDamage amplifyDamage = new();
@@ -280,7 +286,7 @@ public class CustomItems
 
             amplifyDamage._damageTypes = new([true, true, true, true, true]);
 
-            amplifyDamage._damagePercent = 1.2f;
+            amplifyDamage._damagePercent = 1.1f;
 
             item.abilities = [
                 amplifyDamage
@@ -310,7 +316,7 @@ public class CustomItems
 
             item.itemDescription_KR = "<color=#1787D8>마법공격력</color>이 80% 증가합니다.\n"
                                     + "적 공격 시 20% 확률로 화상을 부여합니다.\n"
-                                    + "적에게 화상으로 입히는 데미지가 25% 증폭됩니다.\n"
+                                    + "화상 상태의 적에게 입히는 데미지가 25% 증폭됩니다.\n"
                                     + "가지고 있는 방화 각인에 비례하여 화상의 지속시간이 5%씩 감소합니다.";
 
             item.itemDescription_ZH = "<color=#1787D8>魔法攻击力</color>增加80%，\n"
@@ -362,7 +368,7 @@ public class CustomItems
             item.itemName_ZH = "纳垢圣杯";
 
             item.itemDescription_EN = "Increases swap cooldown speed by 15%.\n"
-                                    + "Upon hitting enemies with a swap skill 150 times, this item transforms into 'Goddess's Chalice.'";
+                                    + "Upon hitting enemies with a swap skill 150 times, this item transforms into 'Goddess's Chalice'.";
 
             item.itemDescription_KR = "교대 쿨다운 속도가 15% 증가합니다.\n"
                                     + "적에게 교대스킬로 데미지를 150번 줄 시 해당 아이템은 '여신의 성배'로 변합니다.";
@@ -492,7 +498,7 @@ public class CustomItems
 
             item.itemDescription_EN = "For every Spoils inscription owned, increase <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 80%.";
 
-            item.itemDescription_KR = "보유하고 있는 '칼레온' 아이템 1개당 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 80% 증가합니다.";
+            item.itemDescription_KR = "보유하고 있는 전리품 각인 1개당 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 80% 증가합니다.";
 
             item.itemDescription_ZH = "每个战利品刻印增加80%<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>。";
 
@@ -527,13 +533,13 @@ public class CustomItems
             item.itemName_KR = "침식된 손가락";
             item.itemName_ZH = "灵巧的手";
 
-            item.itemDescription_EN = "Skill damage dealt to enemies is amplified by 30%.\n"
+            item.itemDescription_EN = "Skill damage dealt to enemies is amplified by 35%.\n"
                                     + "Increases <color=#1787D8>Magic Attack</color> by 60%.";
 
-            item.itemDescription_KR = "적에게 스킬로 입히는 데미지가 30% 증폭됩니다.\n"
+            item.itemDescription_KR = "적에게 스킬로 입히는 데미지가 35% 증폭됩니다.\n"
                                     + "<color=#1787D8>마법공격력</color>이 60% 증가합니다.";
 
-            item.itemDescription_ZH = "技能伤害增幅30%，\n"
+            item.itemDescription_ZH = "技能伤害增幅35%，\n"
                                     + "<color=#1787D8>魔法攻击力</color>增加60%。";
 
             item.itemLore_EN = "A finger from a god tainted by dark quartz";
@@ -555,7 +561,7 @@ public class CustomItems
 
             amplifySkillDamage._damageTypes = new([true, true, true, true, true]);
 
-            amplifySkillDamage._damagePercent = 1.3f;
+            amplifySkillDamage._damagePercent = 1.35f;
 
             item.abilities = [
                 amplifySkillDamage,
@@ -570,24 +576,24 @@ public class CustomItems
 
             item.obtainable = false;
 
-            item.itemName_EN = "Tainted Finger";
-            item.itemName_KR = "침식된 손가락";
+            item.itemName_EN = "Recovered Fingers";
+            item.itemName_KR = "복구된 손가락들";
             item.itemName_ZH = "天才巧手";
 
-            item.itemDescription_EN = "Skill damage dealt to enemies is amplified by 30%.\n"
-                                    + "Increases <color=#1787D8>Magic Attack</color> by 60%.\n"
+            item.itemDescription_EN = "Skill damage dealt to enemies is amplified by 45%.\n"
+                                    + "Increases <color=#1787D8>Magic Attack</color> by 70%.\n"
                                     + "If the item 'Grace of Leonia' is in your possession, this item turns into 'Corrupted God's Hand'.";
 
-            item.itemDescription_KR = "적에게 스킬로 입히는 데미지가 30% 증폭됩니다.\n"
-                                    + "<color=#1787D8>마법공격력</color>이 60% 증가합니다.\n"
+            item.itemDescription_KR = "적에게 스킬로 입히는 데미지가 45% 증폭됩니다.\n"
+                                    + "<color=#1787D8>마법공격력</color>이 70% 증가합니다.\n"
                                     + "현재 '레오니아의 은총' 아이템을 소지하고 있으면 해당 아이템은 '침식된 신의 손' 으로 변합니다.";
 
-            item.itemDescription_ZH = "技能伤害增幅30%，\n"
-                                    + "<color=#1787D8>魔法攻击力</color>增加60%，\n"
+            item.itemDescription_ZH = "技能伤害增幅45%，\n"
+                                    + "<color=#1787D8>魔法攻击力</color>增加70%，\n"
                                     + "当你拥有“雷欧尼亚的恩宠”时，合成为“腐朽的神之手”。";
 
-            item.itemLore_EN = "Nothing happened. It seems like it needs something else.";
-            item.itemLore_KR = "아무 일도 일어나지 않았다. 뭔가 더 필요한 것 같다.";
+            item.itemLore_EN = "The fingers of a no longer corrupted god";
+            item.itemLore_KR = "더 이상 침식되지 않은 신의 손가락들";
             item.itemLore_ZH = "无事发生（指杰作），看来还需要别的东西。";
 
             item.prefabKeyword1 = Inscription.Key.Artifact;
@@ -595,7 +601,7 @@ public class CustomItems
 
             item.stats = new Stat.Values(
             [
-                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.6),
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.7),
             ]);
 
             ModifyDamage amplifySkillDamage = new();
@@ -605,7 +611,7 @@ public class CustomItems
 
             amplifySkillDamage._damageTypes = new([true, true, true, true, true]);
 
-            amplifySkillDamage._damagePercent = 1.3f;
+            amplifySkillDamage._damagePercent = 1.45f;
 
             item.abilities = [
                 amplifySkillDamage,
@@ -630,14 +636,14 @@ public class CustomItems
             item.itemName_KR = "침식된 신의 손";
             item.itemName_ZH = "腐朽的神之手";
 
-            item.itemDescription_EN = "Skill damage dealt to enemies is amplified by 100%.\n"
-                                    + "Increases <color=#1787D8>Magic Attack</color> by 100%.";
+            item.itemDescription_EN = "Skill damage dealt to enemies is amplified by 70%.\n"
+                                    + "Increases <color=#1787D8>Magic Attack</color> by 110%.";
 
-            item.itemDescription_KR = "적에게 스킬로 입히는 데미지가 100% 증폭됩니다.\n"
-                                    + "<color=#1787D8>마법공격력</color>이 100% 증가합니다.";
+            item.itemDescription_KR = "적에게 스킬로 입히는 데미지가 70% 증폭됩니다.\n"
+                                    + "<color=#1787D8>마법공격력</color>이 110% 증가합니다.";
 
-            item.itemDescription_ZH = "技能伤害增幅100%，\n"
-                                    + "<color=#1787D8>魔法攻击力</color>增加100%。";
+            item.itemDescription_ZH = "技能伤害增幅70%，\n"
+                                    + "<color=#1787D8>魔法攻击力</color>增加110%。";
 
             item.itemLore_EN = "A corrupt hand from Leonia's supposed god";
             item.itemLore_KR = "레오니아로 추정되는 신의 침식된 손";
@@ -648,7 +654,7 @@ public class CustomItems
 
             item.stats = new Stat.Values(
             [
-                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 1),
+                new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 1.1),
             ]);
 
             ModifyDamage amplifySkillDamage = new();
@@ -658,7 +664,7 @@ public class CustomItems
 
             amplifySkillDamage._damageTypes = new([true, true, true, true, true]);
 
-            amplifySkillDamage._damagePercent = 2f;
+            amplifySkillDamage._damagePercent = 1.7f;
 
             item.abilities = [
                 amplifySkillDamage,
@@ -819,7 +825,7 @@ public class CustomItems
             item.itemDescription_EN = "Skills have a 15% chance to inflict Freeze.\n"
                                     + "Increases <color=#1787D8>Magic Attack</color> by 60%.\n"
                                     + "Attacking frozen enemies increases the number of hits to remove Freeze by 1.\n"
-                                    + "Amplifies damage to frozen enemies by 25%.";
+                                    + "Amplifies damage dealt to frozen enemies by 25%.";
 
             item.itemDescription_KR = "적에게 스킬로 공격시 15% 확률로 빙결을 부여합니다.\n"
                                     + "<color=#1787D8>마법공격력</color>가 60% 증가합니다.\n"
@@ -832,7 +838,7 @@ public class CustomItems
                                     + "对冰冻状态敌人伤害增幅25%。";
 
             item.itemLore_EN = "When a battlefield turns into a permafrost, the weapon formely wielded by the ice beast Vaalfen appears. ";
-            item.itemLore_KR = "전장에 눈보라가 휘몰아칠 때, 얼음 괴수 발펜의 창이 나타날지니";
+            item.itemLore_KR = "전장에 눈보라가 휘몰아칠 때, 얼음 괴수 발펜이 한 때 들었던 창이 나타난다.";
             item.itemLore_ZH = "寒兽降临，战场化为冻土。";
 
             item.prefabKeyword1 = Inscription.Key.AbsoluteZero;
@@ -1093,7 +1099,7 @@ public class CustomItems
             item.itemDescription_ZH = "每个魔力循环刻印增加10%技能释放速度。";
 
             item.itemLore_EN = "In a last ditch effort, mages may turn to this device to overcharge their mana. Though the high stress on the mage's mana can often strip them of all magic.";
-            item.itemLore_KR = "마나를 극한까지 과부하시키는 마법사들의 최후의 수단.\n너무 강한 과부하는 사용자를 불구로 만들 수 있으니 조심해야 한다";
+            item.itemLore_KR = "마나를 극한까지 끌어올리는 마법사들의 최후의 수단.\n너무 강한 과부하는 사용자를 불구로 만들 수 있으니 조심해야 한다.";
             item.itemLore_ZH = "法师们搏命的道具，用以超负荷运行法力，虽然事后也会让法力完全消失。";
 
             item.prefabKeyword1 = Inscription.Key.Manatech;
@@ -1167,20 +1173,17 @@ public class CustomItems
             item.itemName_KR = "날개달린 창";
             item.itemName_ZH = "黎明长枪";
 
-            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> by 15%.\n"
-                                    + "Increases <color=#1787D8>Magic Attack</color> by 15%.\n"
+            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 15%.\n"
                                     + "Increases Attack Speed by 15%.\n"
                                     + "Increases skill cooldown speed by 15%.\n"
                                     + "Increases swap cooldown speed by 15%.";
 
-            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color>이 15% 증가합니다.\n"
-                                    + "<color=#1787D8>마법공격력</color>이 15% 증가합니다.\n"
+            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 15% 증가합니다.\n"
                                     + "공격속도가 15% 증가합니다.\n"
                                     + "스킬 쿨다운 속도가 15% 증가합니다.\n"
                                     + "교대 쿨다운 속도가 15% 증가합니다.";
 
-            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>增加15%，\n"
-                                    + "<color=#1787D8>魔法攻击力</color>增加15%，\n"
+            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加15%，\n"
                                     + "攻速增加15%，\n"
                                     + "技能冷却速度增加15%，\n"
                                     + "替换冷却速度增加15%。";
@@ -1215,7 +1218,7 @@ public class CustomItems
             item.obtainable = false;
 
             item.itemName_EN = "Solar-Winged Sword";
-            item.itemName_KR = "햇빛 날개달린 검";
+            item.itemName_KR = "태양빛 날개달린 검";
             item.itemName_ZH = "黎明长剑";
 
             item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> by 55%.\n"
@@ -1312,26 +1315,23 @@ public class CustomItems
             item.itemName_KR = "여명의 날개";
             item.itemName_ZH = "黎明之翼";
 
-            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> by 75%.\n"
-                                    + "Increases <color=#1787D8>Magic Attack</color> by 75%.\n"
+            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 75%.\n"
                                     + "Increases Attack Speed by 45%.\n"
                                     + "Increases skill cooldown speed by 45%.\n"
                                     + "Increases swap cooldown speed by 45%.";
 
-            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color>이 75% 증가합니다.\n"
-                                    + "<color=#1787D8>마법공격력</color>이 75% 증가합니다.\n"
+            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 75% 증가합니다.\n"
                                     + "공격속도가 45% 증가합니다.\n"
                                     + "스킬 쿨다운 속도가 45% 증가합니다.\n"
                                     + "교대 쿨다운 속도가 45% 증가합니다.";
 
-            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>增加75%，\n"
-                                    + "<color=#1787D8>魔法攻击力</color>增加75%，\n"
+            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加75%，\n"
                                     + "攻速增加45%，\n"
                                     + "技能冷却速度增加45%，\n"
                                     + "替换冷却速度增加45%。";
 
             item.itemLore_EN = "A divine spear donning the wings of dawn.";
-            item.itemLore_KR = "여명의 날개를 흡수한 신성한 창";
+            item.itemLore_KR = "여명의 날개가 현현한 신성한 창";
             item.itemLore_ZH = "黎明神光伴生";
 
             item.prefabKeyword1 = Inscription.Key.Duel;
@@ -1367,26 +1367,23 @@ public class CustomItems
             item.itemName_KR = "흉조: 최후의 여명";
             item.itemName_ZH = "预兆：黎明终末";
 
-            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> by 110%.\n"
-                                    + "Increases <color=#1787D8>Magic Attack</color> by 110%.\n"
+            item.itemDescription_EN = "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 110%.\n"
                                     + "Increases Attack Speed by 65%.\n"
                                     + "Increases skill cooldown speed by 65%.\n"
                                     + "Increases swap cooldown speed by 65%.";
 
-            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color>이 110% 증가합니다.\n"
-                                    + "<color=#1787D8>마법공격력</color>이 110% 증가합니다.\n"
+            item.itemDescription_KR = "<color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 110% 증가합니다.\n"
                                     + "공격속도가 65% 증가합니다.\n"
                                     + "스킬 쿨다운 속도가 65% 증가합니다.\n"
                                     + "교대 쿨다운 속도가 65% 증가합니다.";
 
-            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>增加110%，\n"
-                                    + "<color=#1787D8>魔法攻击力</color>增加110%，\n"
+            item.itemDescription_ZH = "<color=#F25D1C>物理攻击力</color>与<color=#1787D8>魔法攻击力</color>增加110%，\n"
                                     + "攻速增加65%，\n"
                                     + "技能冷却速度增加65%，\n"
                                     + "替换冷却速度增加65%。";
 
             item.itemLore_EN = "The sky cracks, darkness fills the world within.";
-            item.itemLore_KR = "하늘은 갈라져 속세를 어둠에 물들지니.";
+            item.itemLore_KR = "하늘은 갈라져 속세를 어둠에 물들였다.";
             item.itemLore_ZH = "黎明去，永夜至。";
 
             item.prefabKeyword1 = Inscription.Key.Omen;
@@ -1426,7 +1423,7 @@ public class CustomItems
                                     + "Amplfies damage dealt to an adventurer or a boss by 5%.";
 
             item.itemDescription_KR = "치명타 확률이 5% 증가합니다.\n"
-                                    + "치평타 피해가 25% 증가합니다.\n"
+                                    + "치명타 피해가 25% 증가합니다.\n"
                                     + "적에게 입히는 데미지가 10% 증폭됩니다.\n"
                                     + "모험가 혹은 보스에게 입히는 데미지가 5% 증폭됩니다.";
 
@@ -1481,8 +1478,8 @@ public class CustomItems
             item.itemDescription_ZH = "攻速增加20%，\n"
                                     + "第三次普攻命中敌人时给予一层创伤。";
 
-            item.itemLore_EN = "In ancient times, when there was no English language yet, you would have been called \"Victor\".....";
-            item.itemLore_KR = "태초의 시절, 이곳의 언어도 없던 때에 당신은 \"빅토르\" 라고 불렸던 것 같다.....";
+            item.itemLore_EN = "In ancient times, when there was no English language yet, you would have been called 'Victor'.....";
+            item.itemLore_KR = "태초의 시절, 이곳의 언어도 없던 때에 당신은 '빅토르' 라고 불렸던 것 같다.....";
             item.itemLore_ZH = "古时还不存在英语的时候，你应该被称为“征服者”.....";
 
             item.prefabKeyword1 = Inscription.Key.ExcessiveBleeding;
@@ -1546,7 +1543,7 @@ public class CustomItems
             item.obtainable = false;
 
             item.itemName_EN = "Omen: Accursed Sabre";
-            item.itemName_KR = "저주받은 단도";
+            item.itemName_KR = "흉조: 저주받은 단도";
             item.itemName_ZH = "预兆：诅咒佩刀";
 
             item.itemDescription_EN = "Basic attacks and skills have a 10% chance to apply Wound.\n"
@@ -1646,7 +1643,7 @@ public class CustomItems
             item.itemDescription_EN = "Upon entering a map or hitting a boss phase for the first time, amplifies damage dealt to enemies by 30% for 30 seconds.\n"
                                     + "When the effect is not active, increases damage received by 30%.";
 
-            item.itemDescription_KR = "맵 입장 혹은 보스(페이즈 포함) 에게 처음 데미지를 줄 시 30초 동안 적에게 입히는 데미지가 30% 증폭됩니다.\n"
+            item.itemDescription_KR = "맵 입장 혹은 보스 페이즈 에게 처음 데미지를 줄 시 30초 동안 적에게 입히는 데미지가 30% 증폭됩니다.\n"
                                     + "해당 효과가 발동 중이지 않을 때, 받는 데미지가 30% 증가합니다.";
 
             item.itemDescription_ZH = "每次进入地图或者第一次击中Boss后增幅30%造成的伤害，持续30秒。\n"
@@ -1749,13 +1746,13 @@ public class CustomItems
         }
         {
             var item = new CustomItemReference();
-            item.name = "TatteredPlushie";
+            item.name = "TatteredCatPlushie";
             item.rarity = Rarity.Legendary;
 
             item.obtainable = false;
 
-            item.itemName_EN = "Tattered Plushie";
-            item.itemName_KR = "해진 인형";
+            item.itemName_EN = "Tattered Cat Plushie";
+            item.itemName_KR = "해진 고양이 인형";
             item.itemName_ZH = "最 好 的 朋 友（迫 真）";
 
             item.itemDescription_EN = "Every 5 seconds, depletes 10% of your Max HP and permanently grants you 5% amplification on damage dealt to enemies.\n"
@@ -1767,14 +1764,14 @@ public class CustomItems
             item.itemDescription_ZH = "每5秒消耗10%最大生命值的血量，每消耗一次血量增幅5%伤害，\n"
                                     + "杀死敌人回复2%血量。";
 
-            item.itemLore_EN = "bEsT FrIenDs fOrEveR";
-            item.itemLore_KR = "영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께 영원히 함께";
+            item.itemLore_EN = "bEsT FrIenDs fOrEveR... rIGht..?";
+            item.itemLore_KR = "우린 영원히 함께야... 그렇지..?";
             item.itemLore_ZH = "永怨的朋友";
 
             item.prefabKeyword1 = Inscription.Key.Mystery;
             item.prefabKeyword2 = Inscription.Key.Sin;
 
-            TatteredPlushieAbility ability = new()
+            TatteredCatPlushieAbility ability = new()
             {
                 _timeout = 5.0f,
             };
