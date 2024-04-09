@@ -20,17 +20,8 @@ public class CustomItems
     /**
      * TODO
      * 
-     * Fix Tainted Red Scarf from not evolving - done
-     * Enable Frozen Spear to proc with normal attacks as well - done
-     * Enable Spear of the Frozen Moon to proc with normal attacks as well and increase freeze chance to 20% - done
-     * Change crit dmg of Blood-Soaked Javelin from 5% to 15% - done
-     * Rotten Wings crit chance change to 12% - done
-     * Tainted Finger and Recovered Fingers skill amp to 25% and Recovered Fingers' magic atk to 60% - done
-     * Tainted Finger add increase damage taken by 40% - done
-     * Recovered Fingers add decrease damage taken by 10% - done
-     * Corrupted God's Hand skill amp is now 55%, magic atk is 90%, and now increase damage taken by 75% - done
-     * Change Korean description of Recovered Fingers to actually Korean - done
-     * Recovered Fingers now do not consume Grace of Leonia when evolving - done
+     * Make Attack Speed actual Attack Speed - done
+     * Add _item variable for Winged Spear - done
      */
 
     private static List<CustomItemReference> InitializeItems()
@@ -225,7 +216,7 @@ public class CustomItems
                 new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.35),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.3),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillAttackSpeed, 0.3),
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.15),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.15),
             ]);
 
             item.extraComponents = [
@@ -273,7 +264,7 @@ public class CustomItems
                 new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.7),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.6),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillAttackSpeed, 0.6),
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.3),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.3),
             ]);
 
             ModifyDamage amplifyDamage = new();
@@ -475,7 +466,7 @@ public class CustomItems
 
             item.stats = new Stat.Values(
             [
-                new(Stat.Category.Constant, Stat.Kind.PoisonTickFrequency, 0.1),
+                new(Stat.Category.Constant, Stat.Kind.PoisonTickFrequency, 0.01),
             ]);
 
             items.Add(item);
@@ -739,7 +730,7 @@ public class CustomItems
             item.itemName_ZH = "染血标枪";
 
             item.itemDescription_EN = "Increases Crit Damage by 20%.\n"
-                                    + "Critical hits have a 15% chance to apply Wound (Cooldown: 0.5 seconds).";
+                                    + "Critical hits have a 15% chance to apply Wound (cooldown: 0.5 seconds).";
 
             item.itemDescription_KR = "치명타 데미지가 20% 증가합니다.\n"
                                     + "치명타 시 15% 확률로 적에게 상처를 부여합니다 (쿨타임: 0.5초).";
@@ -1113,7 +1104,7 @@ public class CustomItems
             item.itemLore_ZH = "法师们搏命的道具，用以超负荷运行法力，虽然事后也会让法力完全消失。";
 
             item.prefabKeyword1 = Inscription.Key.Manatech;
-            item.prefabKeyword2 = Inscription.Key.Artifact;
+            item.prefabKeyword2 = Inscription.Key.ManaCycle;
 
             ManaAcceleratorAbility ability = new()
             {
@@ -1209,7 +1200,7 @@ public class CustomItems
             [
                 new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 0.15),
                 new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.15),
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.15),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.15),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.15),
                 new(Stat.Category.PercentPoint, Stat.Kind.SwapCooldownSpeed, 0.15),
             ]);
@@ -1253,7 +1244,7 @@ public class CustomItems
             item.stats = new Stat.Values(
             [
                 new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 0.55),
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.25),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.25),
                 new(Stat.Category.PercentPoint, Stat.Kind.SwapCooldownSpeed, 0.25),
             ]);
 
@@ -1351,7 +1342,7 @@ public class CustomItems
             [
                 new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 0.75),
                 new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 0.75),
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.45),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.45),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.45),
                 new(Stat.Category.PercentPoint, Stat.Kind.SwapCooldownSpeed, 0.45),
             ]);
@@ -1403,7 +1394,7 @@ public class CustomItems
             [
                 new(Stat.Category.PercentPoint, Stat.Kind.PhysicalAttackDamage, 1.1),
                 new(Stat.Category.PercentPoint, Stat.Kind.MagicAttackDamage, 1.1),
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.65),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.65),
                 new(Stat.Category.PercentPoint, Stat.Kind.SkillCooldownSpeed, 0.65),
                 new(Stat.Category.PercentPoint, Stat.Kind.SwapCooldownSpeed, 0.65),
             ]);
@@ -1497,7 +1488,7 @@ public class CustomItems
 
             item.stats = new Stat.Values(
             [
-                new(Stat.Category.PercentPoint, Stat.Kind.BasicAttackSpeed, 0.2),
+                new(Stat.Category.PercentPoint, Stat.Kind.AttackSpeed, 0.2),
             ]);
 
             item.abilities = [
