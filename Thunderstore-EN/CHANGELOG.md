@@ -1,17 +1,7 @@
 1.1.1
 
 更改:
-- 修复了“预兆：亚历山大的残片”第二个刻印不正确的问题
-- 修复了退出重进游戏之后，“俄罗斯方块”销毁给予的属性清除的问题
-- 现在“完美的黄金回旋”的效果有 8 秒的时限
-- 现在“贝黑莱特”的效果描述中添加了它的效果持续时长
-- 现在“猩红帽”在进入房间时会默认给予 1 个猩红残片
-- 现在“坏表”搭配其他减少技能冷却速度的道具时，不再会导致技能冷却速度成为负值
-- 敌人现在可以跳跃
-- 修复了“银河弹弓”无法获取或者无法正常进化的问题
-- 现在“甲斗”和“狙击王的面具”在单独持有时会退化
-- 现在“最 好 的 朋 友（迫 真）”在最大生命值低于 150 时会固定消耗 15 血量
-- “伊甸刺剑”的攻击速度上限由 30% 增加至 50%
-- 更改了“魔王镰刀”的效果
-- 修改了一些道具的剧情描述
-- 修改了“狙击王的面具”、“瓶装精灵”和“洛阳铲”的贴图
+- 'Monk's Tiger Claw Bracers' now properly enabels auto attack when used with Skul Patcher
+- 'Fonias' now properly stacks each time killing a boss
+- Re-sprited 'Rusty Chalice' and 'Goddess's Chalice'
+- Re-sprited 'Dwarven Legend's Pickaxe'
