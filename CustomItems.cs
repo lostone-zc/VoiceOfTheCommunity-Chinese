@@ -836,7 +836,7 @@ public class CustomItems
                                     + "对冰冻状态敌人伤害增幅25%。";
 
             item.itemLore_EN = "When a battlefield turns into a permafrost, the weapon formely wielded by the ice beast Vaalfen appears. ";
-            item.itemLore_KR = "전장에 눈보라가 휘몰아칠 때, 얼음 괴수 발펜이 한 때 들었던 창이 나타난다.";
+            item.itemLore_KR = "전장에 눈보라가 휘몰아칠 때, 전설의 얼음 괴수가 한 때 들었던 창이 나타난다.";
             item.itemLore_ZH = "寒兽降临，战场化为冻土。";
 
             item.prefabKeyword1 = Inscription.Key.AbsoluteZero;
@@ -1766,9 +1766,11 @@ public class CustomItems
             item.itemName_ZH = "最 好 的 朋 友（迫 真）";
 
             item.itemDescription_EN = "Every 5 seconds, depletes 10% of your Max HP and permanently grants you 5% amplification on damage dealt to enemies.\n"
+                                    + "If your Max HP is lower than 150, deplete 15 HP instead."
                                     + "Upon killing an enemy, recovers 4% of your Max HP.";
 
             item.itemDescription_KR = "5초마다 최대 체력의 10%에 달하는 피해를 입고 영구적으로 적들에게 입히는 데미지가 5% 증폭됩니다.\n"
+                                    + "만약 최대 체력이 150 미만일 경우, 대신 15의 피해를 입습니다."
                                     + "적을 처치할 때마다 최대 체력의 4%를 회복합니다.";
 
             item.itemDescription_ZH = "每5秒消耗10%最大生命值的血量，每消耗一次血量增幅5%伤害，\n"
@@ -1937,9 +1939,9 @@ public class CustomItems
             item.itemName_KR = "녹슨 삽";
             item.itemName_ZH = "洛阳铲";
 
-            item.itemDescription_EN = "Damaging 50% of an enemy's Max HP amplifies the damage of your next <color=#F25D1C>physical attack</color> by 50% (10% for adventurers and bosses).";
+            item.itemDescription_EN = "Damaging 50% of an enemy's Max HP (10% for adventurers and bosses) amplifies the damage of your next <color=#F25D1C>physical attack</color> by 50%.";
 
-            item.itemDescription_KR = "적 최대체력의 50% 이상의 데미지를 입힐 시 다음 <color=#F25D1C>물리공격</color>의 데미지가 50% 증폭됩니다 (모험가 및 보스의 경우 10%).";
+            item.itemDescription_KR = "적 최대체력의 50% (모험가 및 보스의 경우 10%) 이상의 데미지를 입힐 시 다음 <color=#F25D1C>물리공격</color>의 데미지가 50% 증폭됩니다.";
 
             item.itemDescription_ZH = "单次造成伤害超过一个敌人的50%最大生命值（10%boss以及冒险家的最大生命值）时，你的下一次<color=#F25D1C>物理攻击</color>伤害增幅50%。";
 
@@ -1965,11 +1967,11 @@ public class CustomItems
             item.itemName_KR = "진홍빛 모자";
             item.itemName_ZH = "猩红帽";
 
-            item.itemDescription_EN = "Upon entering a room, resets the amount of Crimson Essences you have and gains a Crimson Essence for every piece of hazardous equipment in your inventory.\n"
+            item.itemDescription_EN = "Upon entering a room, sets the amount of Crimson Essences you have to 1 and gains a Crimson Essence for every piece of hazardous equipment in your inventory.\n"
                                     + "For every Crimson Essence in possession, increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 40%.\n"
                                     + "Upon being hit, consume a Crimson Essence and negates that hit (This effect occurs before Mercury Heart does).";
 
-            item.itemDescription_KR = "방 입장 시 가지고 있던 진홍빛 정수를 모두 없앤 뒤 인벤토리에 있는 위험한 장비만큼 진홍빛 정수를 획득합니다."
+            item.itemDescription_KR = "방 입장 시 가지고 있던 진홍빛 정수를 1로 만든 뒤 인벤토리에 있는 위험한 장비만큼 진홍빛 정수를 획득합니다."
                                     + "가지고 있는 진홍빛 정수만큼 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 40% 증가합니다.\n"
                                     + "피격 시 진홍빛 정수를 한개 소모하고 해당 피격을 무효화합니다 (해당 효과는 수은 심장이 발동하기 전에 발동합니다).";
 
@@ -1978,7 +1980,7 @@ public class CustomItems
                                     + "当受到攻击时优先消耗猩红残片抵消此次受伤（优先于水银之心）。";
 
             item.itemLore_EN = "The signature attire of a particularly bold adventurer named Will";
-            item.itemLore_KR = "대범한 모험가 윌이 동료처럼 항상 갖고 다니던 모자";
+            item.itemLore_KR = "어느 한 대범한 모험가가 동료처럼 항상 갖고 다니던 모자";
             item.itemLore_ZH = "大冒险家威尔的标志性帽子。";
 
             item.prefabKeyword1 = Inscription.Key.Heirloom;
@@ -2310,8 +2312,6 @@ public class CustomItems
             item.name = "GingaPachinko";
             item.rarity = Rarity.Rare;
 
-            item.obtainable = false;
-
             item.itemName_EN = "Ginga Pachinko";
             item.itemName_KR = "은하 새총";
             item.itemName_ZH = "银河弹弓";
@@ -2368,18 +2368,20 @@ public class CustomItems
 
             item.itemDescription_EN = "Increases Crit Damage by 25%.\n"
                                     + "Upon being hit, attacks gain a 20% chance to inflict Wound for 8 seconds.\n"
-                                    + "Reduces damage taken by 20%.";
+                                    + "Reduces damage taken by 20%.\n"
+                                    + "When 'Mask of Sogeking' is not in possession, turns back into 'Ginga Pachinko'.";
 
             item.itemDescription_KR = "치명타 데미지가 25% 증가합니다.\n"
                                     + "피격 시 8초 동안 공격 시 20% 확률로 상처를 부여합니다.\n"
-                                    + "받는 데미지가 20% 감소합니다.";
+                                    + "받는 데미지가 20% 감소합니다.\n"
+                                    + "'저격왕의 가면'이 인벤토리 내에 없을 시 이 아이템은 다시 '은하 새총' 으로 변합니다.";
 
             item.itemDescription_ZH = "增加25%暴击伤害，\n"
                                     + "受击时，8秒内攻击有20%概率造成创伤，\n"
                                     + "减少20%受到的伤害。";
 
-            item.itemLore_EN = "The weapon of the deadliest sniper in the Grand Line, at least he'd have you think.";
-            item.itemLore_KR = "위대한 항로 제일의 저격수가 쓰는 무기... 처럼 보인다.";
+            item.itemLore_EN = "The very weapon used to shoot down the World Government's flag, thus declaring war on the entire world.";
+            item.itemLore_KR = "세계정부의 깃발을 쏘아내려 전 세계에 전쟁을 선포한 바로 그 무기";
             item.itemLore_ZH = "伟大航路上最致命的猎杀者，至少他让你这么想了。";
 
             item.prefabKeyword1 = Inscription.Key.Strike;
@@ -2401,7 +2403,7 @@ public class CustomItems
             ];
 
             item.extraComponents = [
-                typeof(GingaPachinkoEvolveBehavior)
+                typeof(KabutoRevertBehavior)
             ];
 
             item.forbiddenDrops = ["Custom-GingaPachinko"];
@@ -2419,9 +2421,11 @@ public class CustomItems
             item.itemName_KR = "저격왕의 가면";
             item.itemName_ZH = "狙击王的面具";
 
-            item.itemDescription_EN = "Increases Crit Damage by 70%.";
+            item.itemDescription_EN = "Increases Crit Damage by 70%.\n"
+                                    + "When 'Kabuto' is not in possession, turns back into 'Veiled Mask'.";
 
-            item.itemDescription_KR = "치명타 데미지가 70% 증가합니다.";
+            item.itemDescription_KR = "치명타 데미지가 70% 증가합니다.\n"
+                                    + "'투구'가 인벤토리 내에 없을 시 이 아이템은 다시 '가려진 가면' 으로 변합니다.";
 
             item.itemDescription_ZH = "增加70%暴击伤害。";
 
@@ -2437,6 +2441,10 @@ public class CustomItems
                 new(Stat.Category.PercentPoint, Stat.Kind.CriticalDamage, 0.7)
             ]);
 
+            item.extraComponents = [
+                typeof(MaskOfSogekingRevertBehavior)
+            ];
+
             item.forbiddenDrops = ["VeiledMask"];
 
             items.Add(item);
@@ -2450,9 +2458,9 @@ public class CustomItems
             item.itemName_KR = "베티";
             item.itemName_ZH = "贝黑莱特";
 
-            item.itemDescription_EN = "Upon being hit, increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 50%, amplifies damage dealt to enemies by 4%, and increases damage taken by 2% (stacks up to 5 times).";
+            item.itemDescription_EN = "Upon being hit, increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 50%, amplifies damage dealt to enemies by 4%, and increases damage taken by 2% for 5 seconds (stacks up to 5 times).";
 
-            item.itemDescription_KR = "피격 시 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 50% 증가하고, 적에게 입히는 데미지가 4% 증폭되며, 받는 데미지가 2% 증가합니다 (최대 5번 중첩 가능).";
+            item.itemDescription_KR = "피격 시 5초 동안 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 50% 증가하고, 적에게 입히는 데미지가 4% 증폭되며, 받는 데미지가 2% 증가합니다 (최대 5번 중첩 가능).";
 
             item.itemDescription_ZH = "被击中时增加50%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，对敌人造成的伤害增幅4%，受到伤害增幅2%（可叠加5次）。";
 
@@ -2766,7 +2774,7 @@ public class CustomItems
             item.rarity = Rarity.Rare;
 
             item.itemName_EN = "Blooming Eden";
-            item.itemName_KR = "만개의 에덴";
+            item.itemName_KR = "만개하는 낙원";
             item.itemName_ZH = "伊甸刺剑";
             
             item.itemDescription_EN = "Critical hits increase Attack Speed by 10% for 4 seconds (maximum 30%).";
@@ -2776,7 +2784,7 @@ public class CustomItems
             item.itemDescription_ZH = "暴击时4秒内增加10%攻击速度，最多30%。";
 
             item.itemLore_EN = "By my rapier, I shall protect the buds of Eden until the very last one has bloomed!";
-            item.itemLore_KR = "이 레이피어로, 에덴의 마지막 꽃이 필 때까지 이 꽃봉우리들을 보호하겠어!";
+            item.itemLore_KR = "이 레이피어로, 낙원의 마지막 꽃이 필 때까지 이 꽃봉우리들을 보호하겠어!";
             item.itemLore_ZH = "我的剑锋守护了伊甸的花园，它们将在我身后盛放！";
 
             item.prefabKeyword1 = Inscription.Key.Misfortune;
@@ -3132,7 +3140,7 @@ public class CustomItems
             item.itemDescription_EN = "This item's second inscription is randomly chosen.\n"
                                     + "Enhances a random Bone item you have and disappears.\n"
                                     + "When not having a Bone item, drops a random Bone item and disappears.\n"
-                                    + "When dropping a random Bone item, there is a small chance this a Bone item will not be dropped and this item will remain.\n"
+                                    + "When dropping a random Bone item, there is a small chance a Bone item will not be dropped and this item will remain.\n"
                                     + "Every 25 seconds, amplify a random stat by 25% for 15 seconds.";
 
             item.itemDescription_KR = "이 아이템은 임의의 두번째 각인을 갖습니다.\n"
@@ -3216,10 +3224,12 @@ public class CustomItems
             item.itemName_ZH = "坏表";
 
             item.itemDescription_EN = "Upon using a skill, increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 30% and decreases skill cooldown speed by 20% for 5 seconds (stacks infinitely).\n"
-                                    + "The effect does not activate if your skill cooldown speed stat is 20% or below.";
+                                    + "The effect does not activate if your skill cooldown speed stat is 20% or below.\n"
+                                    + "If your skill cooldown speed is lower than 20%, decrease stacks until your skill cooldown speed is 20% or higher.";
 
             item.itemDescription_KR = "스킬 사용 시 5초 동안 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 30% 증가하고 스킬 쿨다운 속도가 20% 감소합니다 (무한으로 중첩 가능).\n"
-                                    + "스킬 쿨다운 속도 수치가 20% 이하일 때 이 효과는 발동하지 않습니다.";
+                                    + "스킬 쿨다운 속도 수치가 20% 이하일 때 이 효과는 발동하지 않습니다.\n"
+                                    + "만약 스킬 쿨다운 속도가 20% 미만이라면 스킬 쿨다운 속도가 20% 이상이 될 때 까지 이 아이템의 중첩 수가 감소합니다.";
 
             item.itemDescription_ZH = "使用技能时5秒内增加30%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，减少20%技能冷却速度（可叠加）。\n"
                                     + "当技能冷却速度在20%及以下时不生效，直到再次高于20%。";
@@ -3315,7 +3325,7 @@ public class CustomItems
                                     + "武具击中敌人时回复2血（冷却时间1.5秒）。";
 
             item.itemLore_EN = "The legends speak of one Adeptus Astartes. One of the Salamander chapter and used a weapon like no other. He was unkown, and it shall stay that way.";
-            item.itemLore_KR = "먼 옛날 한 아뎀투스 아스타르테스가 있었다. 그는 샐러맨더 챕터의 일원이며, 무기를 그 누구보다 더 잘 다뤘다고 한다. 그의 신원은 알 수 없으며, 앞으로도 알 수 없을 것이다.";
+            item.itemLore_KR = "먼 옛날 한 아답투스 아스타르테스가 있었다. 그는 샐러맨더 챕터의 일원이며, 무기를 그 누구보다 더 잘 다뤘다고 한다. 그의 신원은 알 수 없으며, 앞으로도 알 수 없을 것이다.";
             item.itemLore_ZH = "阿斯塔特修会传言，有一位火蜥蜴军团的力士曾使用长戟如入无人之境。";
 
             item.prefabKeyword1 = Inscription.Key.Relic;

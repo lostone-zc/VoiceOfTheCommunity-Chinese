@@ -1,14 +1,18 @@
-1.1.0
-
-这次更新新增了54个道具。
+1.1.1
 
 更改:
-- 现在“黎明长枪”可以通过拥有2个日月刻印的方式进化成“黎明之翼”
-- 修复了“天才巧手”图标的白色像素
-- 现在“染血标枪”的暴击伤害增伤由 25% 降低至 20%，以与文本匹配
-- 现在“最 好 的 朋 友（迫 真）”杀死敌人时回复 4% 的最大血量
-- 重做了“火山岩锋”
-- 现在攻击速度增益会增加普通攻击的速度和技能释放的速度
-- 移除了不必要的能力图标
-- 修改“冻魂”、“寒魄”、“预兆：诅咒佩刀”、“十字架项链”、“魔王镰刀”、“纳垢圣杯”、“女神圣杯”的贴图
-- 删除了道具列表ItemList.md文件
+- 'Omen: The Secret of the King' now gains a proper second inscription
+- 'Tetronimo' now re-applies the stats upon re-entering the game
+- 'Helix Brooch' now has a 8 second time limit to its effect
+- 'Rusty Shovel' now has a properly worded description
+- 'Becchi' now shows the duration of its effect in the description
+- 'B0n3 0f R4nD0mn3ss' no longer has a grammar issue in the description
+- 'Crimson Cap' now has a default Crimson Essence of 1 when entering a room
+- 'Broken Watch' no longer results in a negative skill cooldown stat when mixed with 'Omen: Coin of Extinction'
+- Enemies can now jump
+- 'Kabuto' now has proper lore
+- 'Ginga Pachinko' is no longer unobtainable
+- 'Ginga Pachinko' now evolves properly
+- 'Kabuto' and 'Mask of Sogeking' now revert into their pre-evolutions when not together
+- 'Tattered Cat Plushie' now depletes 15 HP if your max HP is lower than 150
+- A few items' Korean lore now do not have letters missing
