@@ -13,6 +13,7 @@ namespace VoiceOfTheCommunity;
 [Serializable]
 public class CustomItemReference : ItemReference
 {
+    public string lang = "en";
     private string _originalName;
     public new string name
     {
