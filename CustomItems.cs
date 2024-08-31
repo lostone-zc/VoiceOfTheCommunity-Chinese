@@ -1424,15 +1424,11 @@ public class CustomItems
             item.itemName_KR = "포니아스";
             item.itemName_ZH = "魔王镰刀";
 
-            item.itemDescription_EN = "Increases Crit Chance by 5%.\n"
-                                    + "Increases Crit Damage by 25%.\n"
-                                    + "Amplifies damage dealt to enemies by 10%.\n"
-                                    + "Amplfies damage dealt to an adventurer or a boss by 5%.";
+            item.itemDescription_EN = "Amplifies damage dealt to a boss by 15%.\n"
+                                    + "Killing a boss further increases this amplification by 2.5%.";
 
-            item.itemDescription_KR = "치명타 확률이 5% 증가합니다.\n"
-                                    + "치명타 피해가 25% 증가합니다.\n"
-                                    + "적에게 입히는 데미지가 10% 증폭됩니다.\n"
-                                    + "모험가 혹은 보스에게 입히는 데미지가 5% 증폭됩니다.";
+            item.itemDescription_KR = "보스에게 입히는 데미지가 15% 증폭됩니다.\n"
+                                    + "보스 처치 시 이 아이템의 데미지 증폭량이 2.5% 증가합니다.";
 
             item.itemDescription_ZH = "暴击率增加5%，\n"
                                     + "暴击伤害增加25%，\n"
@@ -1452,19 +1448,8 @@ public class CustomItems
                 new(Stat.Category.PercentPoint, Stat.Kind.CriticalDamage, 0.25),
             ]);
 
-            ModifyDamage amplifyDamage = new();
-
-            amplifyDamage._attackTypes = new([true, true, true, true, true, true, true, true, true]);
-
-            amplifyDamage._damageTypes = new([true, true, true, true, true]);
-
-            amplifyDamage._damagePercent = 1.1f;
-
-            amplifyDamage._defaultIcon = null;
-
             item.abilities = [
-                new FoniasAbility(),
-                amplifyDamage,
+                new FoniasAbility()
             ];
 
             items.Add(item);
@@ -2777,9 +2762,9 @@ public class CustomItems
             item.itemName_KR = "만개하는 낙원";
             item.itemName_ZH = "伊甸刺剑";
             
-            item.itemDescription_EN = "Critical hits increase Attack Speed by 10% for 4 seconds (maximum 30%).";
+            item.itemDescription_EN = "Critical hits increase Attack Speed by 10% for 4 seconds (maximum 50%).";
 
-            item.itemDescription_KR = "치명타 시 4초 동안 공격속도가 10% 증가합니다 (최대 30%).";
+            item.itemDescription_KR = "치명타 시 4초 동안 공격속도가 10% 증가합니다 (최대 50%).";
 
             item.itemDescription_ZH = "暴击时4秒内增加10%攻击速度，最多30%。";
 
@@ -3284,10 +3269,10 @@ public class CustomItems
             item.itemName_KR = "나선형 브로치";
             item.itemName_ZH = "完美的黄金回旋";
 
-            item.itemDescription_EN = "Hitting enemies have a 1.618% chance to gain a Helix.\n"
+            item.itemDescription_EN = "Hitting enemies have a 1.618% chance to gain a Helix for 8 seconds (infinitely stackable).\n"
                                     + "Upon dealing damage to an enemy, deal 5 true damage for each Helix you have.";
 
-            item.itemDescription_KR = "적에게 데미지를 입힐 시 1.618% 확률로 나선을 하나 획득합니다.\n"
+            item.itemDescription_KR = "적에게 데미지를 입힐 시 1.618% 확률로 8초 동안 나선을 하나 획득합니다 (무한으로 중첩 가능).\n"
                                     + "적에게 데미지를 입힐 시 보유중인 나선 하나당 5의 고정 데미지를 추가로 입힙니다.";
 
             item.itemDescription_ZH = "造成伤害时有1.618%概率获得一个黄金回旋，\n"
