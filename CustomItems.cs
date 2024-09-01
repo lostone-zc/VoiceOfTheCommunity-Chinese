@@ -306,8 +306,8 @@ public class CustomItems
 
             item.itemDescription_ZH = "<color=#1787D8>魔法攻击力</color>增加80%，\n"
                                     + "普攻与技能有20%概率给予火伤，\n"
-                                    + "对火伤状态敌人造成伤害增幅25%，\n"
-                                    + "每装备一个放火刻印，火焰燃烧的伤害间隔缩短5%。";
+                                    + "火焰燃烧的伤害间隔缩短20%，对火伤状态敌人造成伤害增加20%，\n"
+                                    + "每装备一个放火刻印，对火伤状态敌人造成伤害增幅5%。";
 
             item.itemLore_EN = "Rumored to be created from the Black Rock Volcano when erupting, this giant blade is the hottest flaming sword.";
             item.itemLore_KR = "전설의 흑요석 화산의 폭발에서 만들어졌다고 전해진, 세상에서 가장 뜨거운 칼날";
@@ -1729,10 +1729,10 @@ public class CustomItems
             item.itemDescription_EN = "Increases dash cooldown speed by 30%.\n"
                                     + "Decreases dash distance by 30%.";
 
-            item.itemDescription_KR = "대쉬 쿨다운 속도가 20% 증가합니다.\n"
+            item.itemDescription_KR = "대쉬 쿨다운 속도가 30% 증가합니다.\n"
                                     + "대쉬 거리가 30% 감소합니다.";
 
-            item.itemDescription_ZH = "疾驰冷却速度增加20%，\n"
+            item.itemDescription_ZH = "疾驰冷却速度增加30%，\n"
                                     + "减少30%疾驰距离。";
 
             item.itemLore_EN = "A small scarf that was once part of an old doll";
@@ -1772,7 +1772,7 @@ public class CustomItems
                                     + "적을 처치할 때마다 최대 체력의 4%를 회복합니다.";
 
             item.itemDescription_ZH = "每5秒消耗10%最大生命值的血量，每消耗一次血量增幅5%伤害，\n"
-                                    + "杀死敌人回复2%血量。";
+                                    + "杀死敌人回复4%血量。";
 
             item.itemLore_EN = "bEsT FrIenDs fOrEveR... rIGht..?";
             item.itemLore_KR = "우린 영원히 함께야... 그렇지..?";
