@@ -1,76 +1,14 @@
-1.1.0 IS HERE BABYYYYYYYYYYYYYYYY
-LETS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+1.1.0
 
-This release adds 54 items:
-- Disorientation Device (Rare)
-- Soul Flame Scythe (Legendary)
-- Carleon Commander's Bihänder (Legendary)
-- Rusty Shovel (Unique)
-- Crimson Cap (Unique)
-- Devils' Mask (Legendary)
-- Sword of the Ages (Legendary)
-- Demon-guard's Training Sword (Common)
-- Shield of the Unrelenting (Unique)
-- The Sword of the Protector (Legendary)
-- Omen: Cursed Shield (Omen)
-- Omen: Horcrux Pendant (Omen)
-- Bottled Faeling (Unique)
-- Ginga Pachinko (Rare)
-- Kabuto (Legendary)
-- Mask of Sogeking (Legendary)
-- Becchi (Legendary)
-- Standard-issue Mining Pick (Unique)
-- Dwarven Legend's Pickaxe (Legendary)
-- Gazing Eye Brooch (Legendary)
-- Mana Fountain (Legendary)
-- Attendant's Cuirass (Unique)
-- Sagittarius's Chakram (Legendary)
-- Gryphon's Feather (Rare)
-- Happiest Mask (Rare)
-- Blooming Eden (Rare)
-- Shieldbone (Rare)
-- Bone of Eternity: Shield (Rare)
-- Diary of an Old Master (Rare)
-- Steel Aegis (Common)
-- Omen: Cursed Daggers (Omen)
-- Sword of the Toxic Moon (Unique)
-- Scythe of the Twin Moons (Legendary)
-- B0n3 0f R4nD0mn3ss (Legendary)
-- B0n3 0f 3t3rn1ty: Randomness (Legendary)
-- Broken Watch (Legendary)
-- Ring Target (Unique)
-- Helix Brooch (Unique)
-- Power Halberd (Legendary)
-- Shadow Thief's Sack (Unique)
-- Tetronimo (Legendary)
-- T-Bone (Legendary)
-- Demoman's Bottle (Unique)
-- Forgotten Company Helmet (Unique)
-- Omen: Damocles (Omen)
-- The Endless Cycle (Legendary)
-- Craftman's Chisel (Rare)
-- Master Craftman's Chisel (Rare)
-- Manatech Sequence Breaker ()
-- Monk's Bracers (Unique)
-- Monk's Tiger Claw Bracers (Unique)
-- Makeshift Helmet (Unique)
-- Omen: The Secret of the King (Omen)
-- Golden Megaphone (Unique)
+这次更新新增了54个道具。
 
-Changes:
-- 'Winged Spear' now evolves when having 2 Sun & Moon inscriptions without any other evolution material
-- Fixed the icon white pixel issue of 'Recovered Fingers'
-- Changed the description of 'Small Twig'
-- Changed the lore of 'Omen: Accursed Sabre'
-- Crit dmg of 'Blood-Soaked Javelin' is decreased from 25% to 20%
-- 'Tattered Cat Plushie' now heals 4% of max HP when killing an enemy
-- Reworked 'Volcanic Shard'
-- Attack speed now increases both normal attack and skill casting speed
-- Removed unnecessary ability icons
-- Hovering text now have Korean translations
-- Re-sprited 'Frozen Spear' and 'Spear of the Frozen Moon'
-- Re-sprited 'Omen: Accursed Sabre'
-- Re-sprited 'Cross Necklace'
-- Re-sprited 'Fonias'
-- Re-sprited 'Rusty Chalice' and 'Goddess's Chalice'
-- Deleted the Item List
+更改:
+- 现在“黎明长枪”可以通过拥有2个日月刻印的方式进化成“黎明之翼”
+- 修复了“天才巧手”图标的白色像素
+- 现在“染血标枪”的暴击伤害增伤由 25% 降低至 20%，以与文本匹配
+- 现在“最 好 的 朋 友（迫 真）”杀死敌人时回复 4% 的最大血量
+- 重做了“火山岩锋”
+- 现在攻击速度增益会增加普通攻击的速度和技能释放的速度
+- 移除了不必要的能力图标
+- 修改“冻魂”、“寒魄”、“预兆：诅咒佩刀”、“十字架项链”、“魔王镰刀”、“纳垢圣杯”、“女神圣杯”的贴图
+- 删除了道具列表ItemList.md文件
