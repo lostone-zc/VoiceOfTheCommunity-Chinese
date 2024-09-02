@@ -1,6 +1,19 @@
-1.1.1
+1.1.3
 
 更改:
-- 现在“僧人齿虎护腕”可以正确地长按连击
-- 现在“魔王镰刀”在击杀boss后可以正确地叠加伤害
-- 修改了“纳垢圣杯”、“女神圣杯”和“矮人族的传说金镐”的贴图
+- 'Crimson Cap' now has a proper description
+- 'Accursed Sabre' now procs every 3 bleeds
+- 'Helix Brooch' now gains 1 damage per stack and no longer has a time limit
+- 'Tetronimo' now gains different amounts of Physical and Magic Attack depending on the rarity of the items destroyed via the item
+- 'Tetronimo' now shares stacks between duplicatees of itself
+- 'T-Bone' now inherits the stacks of its pre-evolution upon evolving
+- 'T-Bone' now amplifies stats gained by the item by 40% when the bone effect is active
+- 'Shield of the Unrelenting' now has properly capitalized description
+- Re-sprited 'Blooming Eden'
+- Re-sprited 'Carleon Commander's Bihänder'
+- Re-sprited 'Demoman's Bottle'
+- Re-sprited 'Fonias'
+- Re-sprited 'Horcrux Pendant'
+- Re-sprited 'Power Halberd'
+- Re-sprited 'Shield of the Unrelenting'
+- Re-sprited 'Steel Aegis'
