@@ -3344,8 +3344,8 @@ public class CustomItems
                                     + "가격을 한번 돌려받을 때마다 수집가가 판매하는 물품의 가격이 10% 상승합니다.\n"
                                     + "상승된 물품의 가격은 암시장 입장 시 초기화됩니다.";
 
-            item.itemDescription_ZH = "每次在商店购买商品时，有15%-25%概率获得同等量金币，\n"
-                                    + "每次成功触发时商店价格提高10%，\n"
+            item.itemDescription_ZH = "每次购买商品时，有15%-25%概率获得同等量金币，\n"
+                                    + "每次成功触发时商品价格提高10%，\n"
                                     + "进入新商店时重置。";
 
             item.itemLore_EN = "Boo! Boo I say! I'm gonna take these items anyway, see?!";
