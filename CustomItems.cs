@@ -3285,7 +3285,7 @@ public class CustomItems
 
             item.itemLore_EN = "A mysterious golden brooch that spirals into infinity";
             item.itemLore_KR = "무한을 향해 영원히 돌아가는 금색 브로치";
-            item.itemLore_ZH = "完美的黄金回旋";
+            item.itemLore_ZH = "真的是，真的是绕了好大一圈啊";
 
             item.prefabKeyword1 = Inscription.Key.Heirloom;
             item.prefabKeyword2 = Inscription.Key.Misfortune;
