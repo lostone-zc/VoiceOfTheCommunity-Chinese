@@ -1432,8 +1432,8 @@ public class CustomItems
 
             item.itemDescription_ZH = "暴击率增加5%，\n"
                                     + "暴击伤害增加25%，\n"
-                                    + "对敌人造成伤害增幅10%，\n"
-                                    + "对冒险者与BOSS伤害再增幅5%。";
+                                    + "对boss造成伤害增幅15%，\n"
+                                    + "每击杀一个boss，伤害的增幅量增加2.5%。";
 
             item.itemLore_EN = "An ancient scythe imbued with cursed power.\nIt was once wielded by a former demon king.";
             item.itemLore_KR = "전대 마왕중 한명이 사용했다는 저주의 기운을 뿜어내는 고대의 낫";
@@ -1758,7 +1758,8 @@ public class CustomItems
                                     + "만약 최대 체력이 150 미만일 경우, 대신 15의 피해를 입습니다."
                                     + "적을 처치할 때마다 최대 체력의 4%를 회복합니다.";
 
-            item.itemDescription_ZH = "每5秒消耗10%最大生命值的血量，每消耗一次血量增幅5%伤害，\n"
+            item.itemDescription_ZH = "每5秒消耗10%最大生命值的血量，每消耗一次血量永久增幅5%伤害，\n"
+                                    + "如果你的最大生命值在150以下时，每5秒则消耗15血量"
                                     + "杀死敌人回复4%血量。";
 
             item.itemLore_EN = "bEsT FrIenDs fOrEveR... rIGht..?";
@@ -1960,7 +1961,7 @@ public class CustomItems
                                     + "가지고 있는 진홍빛 정수만큼 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 40% 증가합니다.\n"
                                     + "피격 시 진홍빛 정수를 한개 소모하고 해당 피격을 무효화합니다 (해당 효과는 수은 심장이 발동하기 전에 발동합니다).";
 
-            item.itemDescription_ZH = "进入房间时，重置之前残存的猩红残片，并根据背包内预兆物品的数量获得猩红残片，"
+            item.itemDescription_ZH = "进入房间时，重置之前残存的猩红残片至1，并根据背包内预兆物品的数量获得猩红残片，"
                                     + "每有一个猩红残片，增加40%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，\n"
                                     + "当受到攻击时优先消耗猩红残片抵消此次受伤（优先于水银之心）。";
 
@@ -2078,7 +2079,7 @@ public class CustomItems
 
             item.itemLore_EN = "\"Alright cadets, it's training day! Now for financial reasons we only have one sword available, so make sure you share it.\"";
             item.itemLore_KR = "\"모두들 오늘도 힘차게 훈련할 준비 됐나?! 경제적인 문제로 인해서 검이 하나밖에 없으니, 잘 나눠서 쓰도록!\"";
-            item.itemLore_ZH = "“好了小子们，今天训练！由于魔王城国库空虚了今天就这一把剑，省着点用。”";
+            item.itemLore_ZH = "“好了小子们，今天训练！由于魔王城国库空虚，今天就这一把剑，省着点用。”";
 
             item.prefabKeyword1 = Inscription.Key.ManaCycle;
             item.prefabKeyword2 = Inscription.Key.ExcessiveBleeding;
@@ -2363,7 +2364,8 @@ public class CustomItems
 
             item.itemDescription_ZH = "增加25%暴击伤害，\n"
                                     + "受击时，8秒内攻击有20%概率造成创伤，\n"
-                                    + "减少20%受到的伤害。";
+                                    + "减少20%受到的伤害，\n"
+                                    + "当你不再拥有道具“狙击王的面具”时，该道具会退化。";
 
             item.itemLore_EN = "The very weapon used to shoot down the World Government's flag, thus declaring war on the entire world.";
             item.itemLore_KR = "세계정부의 깃발을 쏘아내려 전 세계에 전쟁을 선포한 바로 그 무기";
@@ -2412,7 +2414,8 @@ public class CustomItems
             item.itemDescription_KR = "치명타 데미지가 70% 증가합니다.\n"
                                     + "'투구'가 인벤토리 내에 없을 시 이 아이템은 다시 '가려진 가면' 으로 변합니다.";
 
-            item.itemDescription_ZH = "增加70%暴击伤害。";
+            item.itemDescription_ZH = "增加70%暴击伤害，\n"
+                                    + "当你不再拥有道具“甲斗”时，该道具会退化。";
 
             item.itemLore_EN = "Lu lu lala lu~";
             item.itemLore_KR = "룰루랄라루~";
@@ -2447,7 +2450,7 @@ public class CustomItems
 
             item.itemDescription_KR = "피격 시 5초 동안 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 50% 증가하고, 적에게 입히는 데미지가 4% 증폭되며, 받는 데미지가 2% 증가합니다 (최대 5번 중첩 가능).";
 
-            item.itemDescription_ZH = "被击中时增加50%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，对敌人造成的伤害增幅4%，受到伤害增幅2%（可叠加5次）。";
+            item.itemDescription_ZH = "被击中，5秒内增加50%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，对敌人造成的伤害增幅4%，受到伤害增幅2%（可叠加5次）。";
 
             item.itemLore_EN = "Cared for by the mighty warrior Puck.";
             item.itemLore_KR = "위대한 전사 파크가 열심히 관리한 수수께기의 물건";
@@ -2677,7 +2680,7 @@ public class CustomItems
 
             item.itemLore_EN = "Well, well, well... Look at what the cat dragged in...\nA weakling. Poor little weakling.";
             item.itemLore_KR = "이게 누구야... 완전 약골이잖아? 참... 불쌍하다.";
-            item.itemLore_ZH = "看吧看吧，看看那只猫给我送来了什么东西。";
+            item.itemLore_ZH = "看吧看吧，看看那只猫给我送来了什么东西，玩星座上升玩的。";
 
             item.prefabKeyword1 = Inscription.Key.Execution;
             item.prefabKeyword2 = Inscription.Key.Heirloom;
@@ -2766,7 +2769,7 @@ public class CustomItems
 
             item.itemDescription_KR = "치명타 시 4초 동안 공격속도가 10% 증가합니다 (최대 50%).";
 
-            item.itemDescription_ZH = "暴击时4秒内增加10%攻击速度，最多30%。";
+            item.itemDescription_ZH = "暴击时4秒内增加10%攻击速度，最多50%。";
 
             item.itemLore_EN = "By my rapier, I shall protect the buds of Eden until the very last one has bloomed!";
             item.itemLore_KR = "이 레이피어로, 낙원의 마지막 꽃이 필 때까지 이 꽃봉우리들을 보호하겠어!";
@@ -3048,7 +3051,7 @@ public class CustomItems
 
             item.itemLore_EN = "When the Frozen Moon and the Toxic Moon rise, the fusion of their powers appear where their lights collide";
             item.itemLore_KR = "얼어붙은 달과 오염된 달이 함께 뜰 때, 두 빛의 충돌점에 위대한 힘이 탄생할지니";
-            item.itemLore_ZH = "寒月与毒月同时悬空时，他们的力量于半空中相融合。";
+            item.itemLore_ZH = "寒月与毒月同时悬空时，他们的力量于长夜中相融。";
 
             item.prefabKeyword1 = Inscription.Key.AbsoluteZero;
             item.prefabKeyword2 = Inscription.Key.Poisoning;
@@ -3217,7 +3220,7 @@ public class CustomItems
                                     + "만약 스킬 쿨다운 속도가 20% 미만이라면 스킬 쿨다운 속도가 20% 이상이 될 때 까지 이 아이템의 중첩 수가 감소합니다.";
 
             item.itemDescription_ZH = "使用技能时5秒内增加30%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，减少20%技能冷却速度（可叠加）。\n"
-                                    + "当技能冷却速度在20%及以下时不生效，直到再次高于20%。";
+                                    + "当技能冷却速度在20%及以下时不生效，如果低于20%则会减少叠加的层数，直到再次高于20%。";
 
             item.itemLore_EN = "Cling to the past all you want, you'll have to face the present eventually.";
             item.itemLore_KR = "네가 아무리 과거에 매달려 있어도 결국 현재를 마주하게 될거야.";
@@ -3275,7 +3278,7 @@ public class CustomItems
             item.itemDescription_KR = "적에게 데미지를 입힐 시 1.618% 확률로 8초 동안 나선을 하나 획득합니다 (무한으로 중첩 가능).\n"
                                     + "적에게 데미지를 입힐 시 보유중인 나선 하나당 5의 고정 데미지를 추가로 입힙니다.";
 
-            item.itemDescription_ZH = "造成伤害时有1.618%概率获得一个黄金回旋，\n"
+            item.itemDescription_ZH = "造成伤害时有1.618%概率获得一个持续8秒的黄金回旋（可无限叠加），\n"
                                     + "每有一个黄金回旋，造成伤害时附加5真实伤害。";
 
             item.itemLore_EN = "A mysterious golden brooch that spirals into infinity";
