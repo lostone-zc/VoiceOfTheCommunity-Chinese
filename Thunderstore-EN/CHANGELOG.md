@@ -1,23 +1,17 @@
 1.1.1
 
 更改:
-- 'Omen: The Secret of the King' now gains a proper second inscription
-- 'Tetronimo' now re-applies the stats upon re-entering the game
-- 'Helix Brooch' now has a 8 second time limit to its effect
-- 'Rusty Shovel' now has a properly worded description
-- 'Becchi' now shows the duration of its effect in the description
-- 'B0n3 0f R4nD0mn3ss' no longer has a grammar issue in the description
-- 'Crimson Cap' now has a default Crimson Essence of 1 when entering a room
-- 'Broken Watch' no longer results in a negative skill cooldown stat when mixed with 'Omen: Coin of Extinction'
-- Enemies can now jump
-- 'Kabuto' now has proper lore
-- 'Ginga Pachinko' is no longer unobtainable
-- 'Ginga Pachinko' now evolves properly
-- 'Kabuto' and 'Mask of Sogeking' now revert into their pre-evolutions when not together
-- 'Tattered Cat Plushie' now depletes 15 HP if your max HP is lower than 150
-- 'Blooming Eden' now has a maximum Attack Speed increase of 50%
-- 'Fonias' now only amplifies damage dealt to bosses by 15% and adds 2.5% amplification to bosses each time a boss is killed
-- A few items' Korean lore now do not have letters missing
-- Re-sprited 'Mask of Sogeking'
-- Re-sprited 'Bottled Faeling'
-- Re-sprited 'Rusty Shovel'
+- 修复了“预兆：亚历山大的残片”第二个刻印不正确的问题
+- 修复了退出重进游戏之后，“俄罗斯方块”销毁给予的属性清除的问题
+- 现在“完美的黄金回旋”的效果有 8 秒的时限
+- 现在“贝黑莱特”的效果描述中添加了它的效果持续时长
+- 现在“猩红帽”在进入房间时会默认给予 1 个猩红残片
+- 现在“坏表”搭配其他减少技能冷却速度的道具时，不再会导致技能冷却速度成为负值
+- 敌人现在可以跳跃
+- 修复了“银河弹弓”无法获取或者无法正常进化的问题
+- 现在“甲斗”和“狙击王的面具”在单独持有时会退化
+- 现在“最 好 的 朋 友（迫 真）”在最大生命值低于 150 时会固定消耗 15 血量
+- “伊甸刺剑”的攻击速度上限由 30% 增加至 50%
+- 更改了“魔王镰刀”的效果
+- 修改了一些道具的剧情描述
+- 修改了“狙击王的面具”、“瓶装精灵”和“洛阳铲”的贴图
