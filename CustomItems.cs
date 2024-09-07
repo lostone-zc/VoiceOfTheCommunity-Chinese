@@ -1759,7 +1759,7 @@ public class CustomItems
                                     + "적을 처치할 때마다 최대 체력의 4%를 회복합니다.";
 
             item.itemDescription_ZH = "每5秒消耗10%最大生命值的血量，每消耗一次血量永久增幅5%伤害，\n"
-                                    + "如果你的最大生命值在150以下时，每5秒则消耗15血量"
+                                    + "如果你的最大生命值在150以下时，每5秒则消耗15血量\n"
                                     + "杀死敌人回复4%血量。";
 
             item.itemLore_EN = "bEsT FrIenDs fOrEveR... rIGht..?";
