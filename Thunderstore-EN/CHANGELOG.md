@@ -1,7 +1,6 @@
 1.1.1
 
 更改:
-- 'Monk's Tiger Claw Bracers' now properly enables auto attack when used with Skul Patcher
-- 'Fonias' now properly stacks each time killing a boss
-- Re-sprited 'Rusty Chalice' and 'Goddess's Chalice'
-- Re-sprited 'Dwarven Legend's Pickaxe'
+- 现在“僧人齿虎护腕”可以正确地长按连击
+- 现在“魔王镰刀”在击杀boss后可以正确地叠加伤害
+- 修改了“纳垢圣杯”、“女神圣杯”和“矮人族的传说金镐”的贴图
