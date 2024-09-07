@@ -1957,11 +1957,11 @@ public class CustomItems
                                     + "For every Crimson Essence in possession, increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 40%.\n"
                                     + "Upon being hit, consume a Crimson Essence and negates that hit (This effect occurs before Mercury Heart does).";
 
-            item.itemDescription_KR = "방 입장 시 가지고 있던 진홍빛 정수를 1로 만든 뒤 인벤토리에 있는 위험한 장비만큼 진홍빛 정수를 획득합니다."
+            item.itemDescription_KR = "방 입장 시 가지고 있던 진홍빛 정수를 1로 만든 뒤 인벤토리에 있는 위험한 장비만큼 진홍빛 정수를 획득합니다.\n"
                                     + "가지고 있는 진홍빛 정수만큼 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 40% 증가합니다.\n"
                                     + "피격 시 진홍빛 정수를 한개 소모하고 해당 피격을 무효화합니다 (해당 효과는 수은 심장이 발동하기 전에 발동합니다).";
 
-            item.itemDescription_ZH = "进入房间时，重置之前残存的猩红残片至1，并根据背包内预兆物品的数量获得猩红残片，"
+            item.itemDescription_ZH = "进入房间时，重置之前残存的猩红残片至1，并根据背包内预兆物品的数量获得猩红残片，\n"
                                     + "每有一个猩红残片，增加40%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，\n"
                                     + "当受到攻击时优先消耗猩红残片抵消此次受伤（优先于水银之心）。";
 
