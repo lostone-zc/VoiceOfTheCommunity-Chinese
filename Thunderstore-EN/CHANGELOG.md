@@ -1,11 +1,13 @@
-1.1.4
+1.1.5
 
 更改:
-- 修正了“猩红帽”的效果描述
-- “预兆：诅咒佩刀”的效果触发条件由每第 2 次流血改为第 3 次流血
-- 删除了“完美的黄金回旋”的效果时限，每个黄金回旋附加的真实伤害由 5 降至 1
-- 现在“俄罗斯方块”和“T形积木”销毁一件物品时，给予的攻击力增加量由销毁的物品品质决定
-- 现在“俄罗斯方块”或“T形积木”的本体和复制品之间共享销毁物品给予的攻击力
-- 现在“俄罗斯方块”进化成“T形积木”时，销毁物品给予的攻击力会继承
-- 现在“T形积木”激活骨头刻印时，销毁一件物品时给予的额外攻击力由增加 15% 改为增幅 40%
-- 修改了“伊甸刺剑”、“卡利恩指挥官重剑”、“恶魔瓶”、“魔王镰刀”、“预兆：魂器吊坠”、“巨力长戟”、“冷面护卫盾”和“钢盾”的贴图
+- 'Soul Flame Scythe' now has a new description and lore
+- 'Soul Flame Scythe' now increases the chance to gain Soul Fire from enemies by 25% while under the Heirloom inscription effect
+- 'Rusty Shovel' now has a lingering damage increase instead of a one-time use
+- 'Fonias' no longer adds crit chance and damage
+- 'Fonias' now counts your boss kills after the item has been picked up
+- 'Craftsman's Chisel' and 'Master Craftsman's Chisel' are no longer activated by 'Unstable Quintessence'
+- 'Monk's Bracers' no longer disables turbo-attack while it is enabled by Skul Patcher
+- 'Secret of the King' now grants 35% crit damage
+- 'Demoman's Bottle' no longer cancels attacks towards enemies that lack status info
+- 'Forgotten Company Helmet' now has new Korean lore
