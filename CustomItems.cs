@@ -1548,7 +1548,7 @@ public class CustomItems
                                     + "3회 째 출혈마다 출혈을 한번 더 부여합니다.";
 
             item.itemDescription_ZH = "普通攻击与技能伤害有10%概率创伤，\n"
-                                    + "每第二次流血触发2次流血。";
+                                    + "每第三次流血触发2次流血。";
 
             item.itemLore_EN = "Sabre of the great duelist Sly who left his final memento in the form of never-ending anarchy and bloodshed";
             item.itemLore_KR = "끝없는 반역과 학살을 낳았던 세계 제일의 결투가 슬라이의 단도";
@@ -1961,7 +1961,7 @@ public class CustomItems
                                     + "가지고 있는 진홍빛 정수만큼 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 40% 증가합니다.\n"
                                     + "피격 시 진홍빛 정수를 한개 소모하고 해당 피격을 무효화합니다 (해당 효과는 수은 심장이 발동하기 전에 발동합니다).";
 
-            item.itemDescription_ZH = "进入房间时，重置之前残存的猩红残片至1，并根据背包内预兆物品的数量获得猩红残片，\n"
+            item.itemDescription_ZH = "进入房间时，重置之前残存的猩红残片至1，并根据背包内某些模组物品、预兆物品以及诅咒技能的数量获得猩红残片，\n"
                                     + "每有一个猩红残片，增加40%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，\n"
                                     + "当受到攻击时优先消耗猩红残片抵消此次受伤（优先于水银之心）。";
 
@@ -3278,8 +3278,8 @@ public class CustomItems
             item.itemDescription_KR = "적에게 데미지를 입힐 시 1.618% 확률로 나선을 하나 획득합니다 (무한으로 중첩 가능).\n"
                                     + "적에게 데미지를 입힐 시 보유중인 나선 하나당 1의 고정 데미지를 추가로 입힙니다.";
 
-            item.itemDescription_ZH = "造成伤害时有1.618%概率获得一个持续8秒的黄金回旋（可无限叠加），\n"
-                                    + "每有一个黄金回旋，造成伤害时附加5真实伤害。";
+            item.itemDescription_ZH = "造成伤害时有1.618%概率获得一个黄金回旋（可无限叠加），\n"
+                                    + "每有一个黄金回旋，造成伤害时附加1真实伤害。";
 
             item.itemLore_EN = "A mysterious golden brooch that spirals into infinity";
             item.itemLore_KR = "무한을 향해 영원히 돌아가는 금색 브로치";
@@ -3378,7 +3378,7 @@ public class CustomItems
 
             item.itemDescription_ZH = "该物品有2随机刻印，\n"
                                     + "背包里有4件与该物品相同刻印的物品时会销毁那些同刻印的物品，\n"
-                                    + "每销毁一件增加30%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>。";
+                                    + "每销毁一件物品根据被销毁的物品品质增加15/30/45/60/75%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，预兆视为最高品质。";
 
             item.itemLore_EN = "Where is that line piece when you need it?";
             item.itemLore_KR = "작대기 블록이 어디갔지?";
@@ -3422,8 +3422,8 @@ public class CustomItems
 
             item.itemDescription_ZH = "该物品有一随机刻印，\n"
                                     + "背包里有4件与该物品二号刻印相同刻印的物品时会销毁那些同刻印的物品，\n"
-                                    + "每销毁一件增加30%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，\n"
-                                    + "骨头刻印激活时，销毁物品提供的<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>额外增加15%，持续15秒。";
+                                    + "每销毁一件物品根据被销毁的物品品质增加15/30/45/60/75%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，预兆视为最高品质，\n"
+                                    + "骨头刻印激活时，销毁物品提供的<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>额外增幅40%，持续15秒。";
 
             item.itemLore_EN = "Time for a T-Spin";
             item.itemLore_KR = "T-스핀 할 시간이야";
