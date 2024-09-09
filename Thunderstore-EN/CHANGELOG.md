@@ -1,19 +1,11 @@
 1.1.3
 
 更改:
-- 'Crimson Cap' now has a proper description
-- 'Accursed Sabre' now procs every 3 bleeds
-- 'Helix Brooch' now gains 1 damage per stack and no longer has a time limit
-- 'Tetronimo' now gains different amounts of Physical and Magic Attack depending on the rarity of the items destroyed via the item
-- 'Tetronimo' now shares stacks between duplicatees of itself
-- 'T-Bone' now inherits the stacks of its pre-evolution upon evolving
-- 'T-Bone' now amplifies stats gained by the item by 40% when the bone effect is active
-- 'Shield of the Unrelenting' now has properly capitalized description
-- Re-sprited 'Blooming Eden'
-- Re-sprited 'Carleon Commander's Bihänder'
-- Re-sprited 'Demoman's Bottle'
-- Re-sprited 'Fonias'
-- Re-sprited 'Horcrux Pendant'
-- Re-sprited 'Power Halberd'
-- Re-sprited 'Shield of the Unrelenting'
-- Re-sprited 'Steel Aegis'
+- 修正了“猩红帽”的效果描述
+- “预兆：诅咒佩刀”的效果触发条件由每第 2 次流血改为第 3 次流血
+- 删除了“完美的黄金回旋”的效果时限，每个黄金回旋附加的真实伤害由 5 降至 1
+- 现在“俄罗斯方块”和“T形积木”销毁一件物品时，给予的攻击力增加量由销毁的物品品质决定
+- 现在“俄罗斯方块”或“T形积木”的本体和复制品之间共享销毁物品给予的攻击力
+- 现在“俄罗斯方块”进化成“T形积木”时，销毁物品给予的攻击力会继承
+- 现在“T形积木”激活骨头刻印时，销毁一件物品时给予的额外攻击力由增加 15% 改为增幅 40%
+- 修改了“伊甸刺剑”、“卡利恩指挥官重剑”、“恶魔瓶”、“魔王镰刀”、“预兆：魂器吊坠”、“巨力长戟”、“冷面护卫盾”和“钢盾”的贴图
