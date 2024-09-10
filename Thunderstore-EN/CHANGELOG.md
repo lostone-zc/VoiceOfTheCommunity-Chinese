@@ -1,13 +1,13 @@
 1.1.5
 
 更改:
-- 'Soul Flame Scythe' now has a new description and lore
-- 'Soul Flame Scythe' now increases the chance to gain Soul Fire from enemies by 25% while under the Heirloom inscription effect
-- 'Rusty Shovel' now has a lingering damage increase instead of a one-time use
-- 'Fonias' no longer adds crit chance and damage
-- 'Fonias' now counts your boss kills after the item has been picked up
-- 'Craftsman's Chisel' and 'Master Craftsman's Chisel' are no longer activated by 'Unstable Quintessence'
-- 'Monk's Bracers' no longer disables turbo-attack while it is enabled by Skul Patcher
-- 'Secret of the King' now grants 35% crit damage
-- 'Demoman's Bottle' no longer cancels attacks towards enemies that lack status info
-- 'Forgotten Company Helmet' now has new Korean lore
+- 修正了“魂焰冷火镰”、“俄罗斯方块”和“T形积木”的效果描述
+- 增加了“魂焰冷火镰”在激活传家宝刻印时的效果
+- 现在“洛阳铲”的效果由下一次物理攻击增幅改为时限内物理攻击增幅
+- 现在“魔王镰刀”不再增加暴击率和暴击伤害
+- 现在“魔王镰刀”只计算拾起它之后击杀的boss
+- 现在“匠人凿子”和“大师匠人凿子”不再触发“不稳定精华”
+- 再次修复“僧人齿虎护腕”的长按连击问题
+- 现在“预兆：亚历山大的残片”会增加35%暴击伤害，同时其替换头骨后的效果时限由1秒改为3秒
+- 现在“恶魔瓶”不再取消对缺少状态信息的敌人的攻击
+- 修改了“魂焰冷火镰”的贴图
