@@ -1430,9 +1430,7 @@ public class CustomItems
             item.itemDescription_KR = "보스에게 입히는 데미지가 15% 증폭됩니다.\n"
                                     + "보스 처치 시 이 아이템의 데미지 증폭량이 2.5% 증가합니다.";
 
-            item.itemDescription_ZH = "暴击率增加5%，\n"
-                                    + "暴击伤害增加25%，\n"
-                                    + "对boss造成伤害增幅15%，\n"
+            item.itemDescription_ZH = "对boss造成伤害增幅15%，\n"
                                     + "每击杀一个boss，伤害的增幅量增加2.5%。";
 
             item.itemLore_EN = "An ancient scythe imbued with cursed power.\nIt was once wielded by a former demon king.";
@@ -1830,8 +1828,9 @@ public class CustomItems
                                     + "가보 각인의 효과가 발동중일 시 적의 영혼이 흡수될 확률이 25% 증가합니다.";
 
             item.itemDescription_ZH = "增加<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>50%，\n"
-                                    + "增加攻击速度和技能冷却速度20%，\n"
-                                    + "击杀敌人时有45%概率增加1%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>（最多300%）。";
+                                    + "增加攻击速度和技能冷却速度20%。\n"
+                                    + "击杀敌人时有45%概率耗魂增加1%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>（最多300%），\n"
+                                    + "传家宝刻印激活时，收魂概率增加25%。";
 
             item.itemLore_EN = "Once the Soul-mage Bear attempted to harness the powers of the god of the netherworld, but what remains is his scythe...";
             item.itemLore_KR = "한 때 영혼술사 베어가 마신의 힘을 흡수하려고 했으나, 남겨져 있는 것은 그의 낫 뿐이다...";
@@ -1925,7 +1924,7 @@ public class CustomItems
 
             item.itemDescription_KR = "적 최대체력의 50% (모험가 및 보스의 경우 10%) 이상의 데미지를 입힐 시 1초 동안 <color=#F25D1C>물리공격</color>의 데미지가 50% 증폭됩니다.";
 
-            item.itemDescription_ZH = "单次造成伤害超过一个敌人的50%最大生命值（10%boss以及冒险家的最大生命值）时，你的下一次<color=#F25D1C>物理攻击</color>伤害增幅50%。";
+            item.itemDescription_ZH = "单次造成伤害超过一个敌人的50%最大生命值（10%boss以及冒险家的最大生命值）时，1秒内你的<color=#F25D1C>物理攻击力</color>增幅50%。";
 
             item.itemLore_EN = "Anything can be lethal if wielded with enough conviction";
             item.itemLore_KR = "투지만 있다면 무엇이든 무기가 될 수 있다";
@@ -2215,7 +2214,7 @@ public class CustomItems
                                     + "가보 각인의 효과가 발동중일 시 추가로 모든 수치가 10% 증폭됩니다 (발동중이 아닐 시 10초 동안 유지됩니다).";
 
             item.itemDescription_ZH = "所有属性增幅10%，\n"
-                                    + "传家宝激活时所有属性再增幅10%（传家宝消失时再持续10秒）。";
+                                    + "传家宝刻印激活时所有属性再增幅10%（传家宝消失时再持续10秒）。";
 
             item.itemLore_EN = "A pendant worn only by the most foolish of sorcerers.\nGives the wearer unparalleled strength at the cost of self stability.";
             item.itemLore_KR = "마법사들 중 가장 멍청한 자들만이 입는 목걸이.\n자신의 안전을 대가로 엄청난 힘을 얻게 해준다.";
@@ -3803,7 +3802,8 @@ public class CustomItems
                                     + "상태이상으로 입힌 데미지가 치명타로 가해질 수 있습니다.\n"
                                     + "이 아이템의 두번째 각인은 독살, 과다출혈, 현기증, 절대영도, 그리고 방화 중에서 임의로 정해집니다.";
 
-            item.itemDescription_ZH = "替换后1秒内造成的伤害有10%概率赋予随机异常状态，\n"
+            item.itemDescription_ZH = "增加35%暴击伤害，\n"
+                                    + "替换后3秒内造成的伤害有10%概率赋予随机异常状态，\n"
                                     + "异常状态可以造成暴击，\n"
                                     + "该物品的刻印在5种异常状态刻印随机取一。";
 
