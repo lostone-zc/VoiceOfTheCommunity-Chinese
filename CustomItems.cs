@@ -3372,7 +3372,7 @@ public class CustomItems
                                     + "이 아이템으로 파괴된 아이템 하나당 파괴된 아이템의 등급에 따라 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 15~75% 증가합니다.";
 
             item.itemDescription_ZH = "该物品有2随机刻印，\n"
-                                    + "背包里有4件与该物品相同刻印的物品时会销毁那些同刻印的物品，\n"
+                                    + "背包里有4件相同刻印的物品时，会销毁拥有那个刻印的所有物品，（不会导致该物品被销毁）\n"
                                     + "每销毁一件物品根据被销毁的物品品质增加15/30/45/60/75%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，预兆视为最高品质。";
 
             item.itemLore_EN = "Where is that line piece when you need it?";
@@ -3406,7 +3406,7 @@ public class CustomItems
             item.itemName_ZH = "T形积木";
 
             item.itemDescription_EN = "This item's second inscription is randomly chosen.\n"
-                                    + "Upon having 4 items in your inventory with the same inscription, any item in your inventory with that inscription are immediately destroyed (other than Tetronimo).\n"
+                                    + "Upon having 4 items in your inventory with the same inscription, any item in your inventory with that inscription are immediately destroyed (other than T-Bone).\n"
                                     + "Increases <color=#F25D1C>Physical Attack</color> and <color=#1787D8>Magic Attack</color> by 15~75% for every item destroyed via this item depending on the destroyed item's rarity.\n"
                                     + "Activating a Bone insctipion effect will amplify the stats gained by this item by 40% for 15 seconds.";
 
@@ -3416,7 +3416,7 @@ public class CustomItems
                                     + "뼈 각인 효과 발동 시 15초간 이 아이템으로 증가한 <color=#F25D1C>물리공격력</color> 및 <color=#1787D8>마법공격력</color>이 40% 증폭됩니다.";
 
             item.itemDescription_ZH = "该物品有一随机刻印，\n"
-                                    + "背包里有4件与该物品二号刻印相同刻印的物品时会销毁那些同刻印的物品，\n"
+                                    + "背包里有4件相同刻印的物品时，会销毁拥有那个刻印的所有物品，（不会导致该物品被销毁）\n"
                                     + "每销毁一件物品根据被销毁的物品品质增加15/30/45/60/75%<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>，预兆视为最高品质，\n"
                                     + "骨头刻印激活时，销毁物品提供的<color=#F25D1C>物理攻击力</color>和<color=#1787D8>魔法攻击力</color>额外增幅40%，持续15秒。";
 
